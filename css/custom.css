@@ -488,7 +488,7 @@ header.main-header .header-sticky.active {
 }
 
 .navbar {
-	padding: 25px 0;
+	padding: 10px 0;
 	align-items: center;
 }
 
@@ -4670,7 +4670,7 @@ header.main-header .header-sticky.active {
 	}
 
 	.navbar {
-		padding: 20px 0;
+		padding: 5px 0;
 	}
 
 	.main-menu ul li.highlighted-menu {
@@ -6183,7 +6183,6 @@ h1 span {
 	height: 100%;
 	pointer-events: none;
 	z-index: 1;
-	overflow: visible !important;
 }
 
 /* Infographic 3-Column Layout */
