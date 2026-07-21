@@ -12,7 +12,7 @@
     <!-- Page Title -->
     <title>CANSYZ - Creating Global Opportunities</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="images/Flag_of_Canada_leaf.webp">
     <!-- Google Fonts Css-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+            <div id="loading-icon"><img src="images/Flag_of_Canada_leaf.webp" alt="" class="canada-loader-leaf"></div>
         </div>
     </div>
     <!-- Preloader End -->
@@ -50,29 +50,25 @@
     <div class="topbar">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <!-- Topbar Contact Information Start -->
+                <div class="col-lg-8 col-md-12">
                     <div class="topbar-contact-info">
                         <ul>
-                            <li><img src="images/icon-watch.svg" alt=""> <span>Working Hour:</span> Mon - Sat: 10:00 AM
-                                - 6:00 PM</li>
-                            <li><img src="images/icon-mail.svg" alt=""> <span>Email:</span><a href="#">
-                                    info@cansyz.com</a></li>
+                            <li><i class="fa-regular fa-clock"></i> Mon - Sat: 10:00 AM - 6:00 PM</li>
+                            <li><i class="fa-regular fa-envelope"></i> <a href="mailto:info@cansyz.com">info@cansyz.com</a></li>
+                            <li><i class="fa-solid fa-phone"></i> <a href="tel:+917448865000">+91 74488 65000</a></li>
                         </ul>
                     </div>
-                    <!-- Topbar Contact Information End -->
                 </div>
-
-                <div class="col-lg-4">
-                    <!-- Header Social Icons Start -->
+                <div class="col-lg-4 col-md-12">
                     <div class="topbar-social-icons">
+                        <span class="social-label">Follow us:</span>
                         <ul>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                         </ul>
                     </div>
-                    <!-- Header Social Icons End -->
                 </div>
             </div>
         </div>
@@ -80,41 +76,33 @@
     <!-- Topbar Section End -->
 
     <!-- Header Start -->
-    <header class="main-header">
+    <header class="main-header header-redesign">
         <div class="header-sticky">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <!-- Logo Start -->
-                    <a class="navbar-brand" href="./"><img src="images/cansys-international-logo.png" alt="CANSYZ Logo"
-                            style="max-height: 60px;"></a>
+                    <a class="navbar-brand" href="./"><img src="images/cansys-international-logo.png" alt="CANSYZ Logo" style="max-height: 55px;"></a>
                     <!-- Logo End -->
 
                     <!-- Main Menu Start -->
                     <div class="collapse navbar-collapse main-menu">
-                        <div class="nav-menu-wrapper">
-                            <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="about.html">About CANSYZ</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">CANSYZ 360&deg;</a></li>
-                                <li class="nav-item"><a class="nav-link" href="countries.html">Study Destinations</a>
-                                </li>
+                        <div class="nav-menu-wrapper ms-auto">
+                            <ul class="navbar-nav ms-auto" id="menu">
+                                <li class="nav-item active-item"><a class="nav-link" href="./">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="countries.html">Destinations</a></li>
                                 <li class="nav-item"><a class="nav-link" href="why-canada.html">Why Canada</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
-                        <!-- Contact Now Box Start -->
-                        <div class="contact-now-box d-inline-flex">
-                            <div class="icon-box">
-                                <img src="images/icon-phone.svg" alt="">
-                            </div>
-                            <div class="contact-now-box-content">
-                                <p>call us now</p>
-                                <h3><a href="tel:+917448865000">+91 74488 65000</a></h3>
-                            </div>
-                        </div>
-                        <!-- Contact Now Box End -->
                     </div>
                     <!-- Main Menu End -->
+                    <!-- Hamburger Button -->
+                    <button class="header-hamburger-btn d-none d-lg-flex" type="button">
+                        <span></span><span></span><span></span>
+                    </button>
                     <div class="navbar-toggle"></div>
                 </div>
             </nav>
@@ -123,176 +111,59 @@
     </header>
     <!-- Header End -->
 
+
     <!-- Hero Section Start -->
-    <div class="hero">
+    <section class="hero-new">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Hero Content Start -->
-                    <div class="hero-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">trusted immigration partner</h3>
-                            <h1 class="text-anime-style-3" data-cursor="-opaque">CREATING GLOBAL
-                                <span>OPPORTUNITIES</span>
-                            </h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Empowering students to build successful global
-                                futures through transparent guidance,
-                                personalized career planning, and continuous support from their first counselling
-                                session to the successful completion of their first year abroad.
-                            </p>
+                <!-- Text Content -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="hero-content-new">
+                        <div class="hero-badge wow fadeInUp">
+                            <img src="images/Flag_of_Canada_leaf.webp" alt="Canada Maple Leaf" class="hero-badge-leaf">
+                            <span>TRUSTED INTERNATIONAL<br>EDUCATION PARTNER</span>
                         </div>
-                        <!-- Section Title End -->
-
-                        <!-- Hero Button Start -->
-                        <div class="hero-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="services.html" class="btn-default">Book a Free Consultation</a>
-                            <a href="contact.html" class="btn-default">Explore Study Destinations</a>
+                        <h1 class="hero-heading wow fadeInUp" data-wow-delay="0.1s">
+                            Your Global<br>
+                            <span class="hero-highlight">Future</span><br>
+                            Begins Here
+                        </h1>
+                        <div class="hero-red-bar wow fadeInUp" data-wow-delay="0.15s"></div>
+                        <p class="hero-desc wow fadeInUp" data-wow-delay="0.2s">
+                            Personalized guidance for students who aspire to study abroad&mdash;with honest counselling, transparent advice, and end-to-end support from your first consultation to your first year overseas.
+                        </p>
+                        <div class="hero-btns wow fadeInUp" data-wow-delay="0.3s">
+                            <a href="services.html" class="hero-btn-primary">
+                                <i class="fa-regular fa-calendar"></i>
+                                Book a Free Consultation
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="countries.html" class="hero-btn-outline">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Explore Study Destinations
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <!-- Hero Button End -->
                     </div>
-                    <!-- Hero Content End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Hero Images Start -->
-                    <div class="hero-images">
-                        <!-- Country Circle Image Start -->
-                        <div class="country-circle-img">
-                            <img src="images/hero-country-circle-img.png" alt="">
-                        </div>
-                        <!-- Country Circle Image End -->
-
-                        <!-- Hero Image Start -->
-                        <div class="hero-image">
-                            <figure class="image-anime">
-                                <img src="images/Cansys-international-banner.png" alt="">
-                            </figure>
-
-                            <!-- Country Flag Image Start -->
-                            <div class="country-flag-img-1">
-                                <img src="images/hero-country-flag-img-1.svg" alt="">
-                            </div>
-                            <!-- Country Flag Image End -->
-
-                            <!-- Country Flag Image Start -->
-                            <div class="country-flag-img-2">
-                                <img src="images/hero-country-flag-img-2.svg" alt="">
-                            </div>
-                            <!-- Country Flag Image End -->
-                        </div>
-                        <!-- Hero Image End -->
-                    </div>
-                    <!-- Hero Images End -->
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Hero Section End -->
 
-    <!-- Institution Marquee Section Start -->
-    <div class="institution-marquee-section">
-        <div class="container">
-            <div class="institution-marquee-wrapper wow fadeInUp" data-wow-delay="0.1s">
-                <div class="marquee-left-title">
-                    <span class="title-top">Trusted by Students.</span>
-                    <span class="title-bottom">Recognized by Institutions.</span>
-                </div>
-                <div class="marquee-divider"></div>
-                <div class="marquee-right-flow">
-                    <div class="marquee-track">
-                        <!-- Group 1 -->
-                        <div class="marquee-group">
-                            <div class="univ-item"><img src="images/logo-toronto.svg" alt="University of Toronto"
-                                    class="toronto-logo"></div>
-                            <div class="univ-item">
-                                <div class="univ-logo-combine"><img src="images/logo-ubc.svg" alt="UBC"
-                                        class="univ-shield"><span class="univ-name ubc-name">UBC</span></div>
-                            </div>
-                            <div class="univ-item"><img src="images/logo-mcgill.svg" alt="McGill University"
-                                    class="mcgill-logo"></div>
-                            <div class="univ-item">
-                                <div class="univ-logo-combine"><img src="images/logo-waterloo.png"
-                                        alt="University of Waterloo" class="univ-shield">
-                                    <div class="waterloo-wrap"><span class="waterloo-top">UNIVERSITY OF</span><br><span
-                                            class="waterloo-bottom">WATERLOO</span></div>
-                                </div>
-                            </div>
-                            <div class="univ-item">
-                                <div class="univ-logo-combine"><img src="images/logo-western.png"
-                                        alt="Western University" class="univ-shield">
-                                    <div class="western-wrap"><span class="western-main">Western</span><br><span
-                                            class="western-sub">UNIVERSITY &middot; CANADA</span></div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- Group 2 (Duplicate for seamless scrolling loop) -->
-                        <div class="marquee-group">
-                            <div class="univ-item"><img src="images/logo-toronto.svg" alt="University of Toronto"
-                                    class="toronto-logo"></div>
-                            <div class="univ-item">
-                                <div class="univ-logo-combine"><img src="images/logo-ubc.svg" alt="UBC"
-                                        class="univ-shield"><span class="univ-name ubc-name">UBC</span></div>
-                            </div>
-                            <div class="univ-item"><img src="images/logo-mcgill.svg" alt="McGill University"
-                                    class="mcgill-logo"></div>
-                            <div class="univ-item">
-                                <div class="univ-logo-combine"><img src="images/logo-waterloo.png"
-                                        alt="University of Waterloo" class="univ-shield">
-                                    <div class="waterloo-wrap"><span class="waterloo-top">UNIVERSITY OF</span><br><span
-                                            class="waterloo-bottom">WATERLOO</span></div>
-                                </div>
-                            </div>
-                            <div class="univ-item">
-                                <div class="univ-logo-combine"><img src="images/logo-western.png"
-                                        alt="Western University" class="univ-shield">
-                                    <div class="western-wrap"><span class="western-main">Western</span><br><span
-                                            class="western-sub">UNIVERSITY &middot; CANADA</span></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Institution Marquee Section End -->
 
     <!-- About Us Section Start -->
     <div class="about-us">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <!-- About Us Images Start -->
-                    <div class="about-us-images">
-                        <!-- About Image 1 Start -->
-                        <div class="about-img-1">
-                            <figure class="image-anime reveal">
-                                <img src="images/about-cansyz-1.png" alt="">
-                            </figure>
-                        </div>
-                        <!-- About Image 1 End -->
-
-                        <!-- About Image 2 Start -->
-                        <div class="about-img-2">
-                            <figure class="image-anime reveal">
-                                <img src="images/about-cansyz-2.png" alt="">
-                            </figure>
-                        </div>
-                        <!-- About Image 2 End -->
-
-                        <!-- Success Rating Box Start -->
-                        <div class="success-rating-box">
-                            <div class="Success-rating-content">
-                                <h2><span class="counter">100</span>%</h2>
-                                <p>successful rate</p>
-                            </div>
-                        </div>
-                        <!-- Success Rating Box End -->
+                    <!-- About Us Single Image Start -->
+                    <div class="about-single-img-wrap">
+                        <figure class="image-anime reveal">
+                            <img src="images/about-cansyz-2.png" alt="About CANSYZ" class="about-single-photo">
+                        </figure>
                     </div>
-                    <!-- About Us Images End -->
+                    <!-- About Us Single Image End -->
                 </div>
 
                 <div class="col-lg-6">
@@ -358,314 +229,408 @@
     </div>
     <!-- About Us Section End -->
 
-    <!-- Global Journey Section Start -->
-    <div class="global-journey-section">
+    <!-- Path to Success Section Start -->
+    <section class="pts-section-new">
+        <div class="pts-bg-map"></div>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title text-center" style="margin-bottom: 70px;">
-                        <h3 class="wow fadeInUp"
-                            style="color: var(--accent-color); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">
-                            Your Path to Success</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque"
-                            style="font-size: 42px; font-weight: 800; color: var(--primary-color); max-width: 800px; margin: 15px auto 0 auto; line-height: 1.2;">
-                            Comprehensive Solutions for Every Stage of Your Global Education Journey
+            <!-- Top Row: Text + Shaded Counselor Image -->
+            <div class="row align-items-center pts-hero-row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="pts-text-box wow fadeInLeft">
+                        <div class="pts-badge-wrap">
+                            <i class="fa-solid fa-graduation-cap pts-cap-icon"></i>
+                            <span class="pts-badge-title">YOUR PATH TO SUCCESS</span>
+                        </div>
+                        <h2 class="pts-title">
+                            Everything You Need<br>
+                            to <span class="pts-title-red">Study Abroad</span>
                         </h2>
+                        <div class="pts-red-underline"></div>
+                        <p class="pts-paragraph">
+                            From career counselling to your first year abroad, we provide end-to-end guidance so you can focus on your dreams while we handle the rest.
+                        </p>
+                        <div class="pts-trust-line">
+                            <span><i class="fa-regular fa-circle-check pts-check-icon"></i> Guiding you with expertise.</span>
+                            <span class="pts-pipe">|</span>
+                            <span><i class="fa-regular fa-heart pts-heart-icon"></i> Supporting you at every step.</span>
+                        </div>
                     </div>
-                    <!-- Section Title End -->
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <div class="pts-img-container wow fadeInRight">
+                        <img src="images/path_to_success_counselor.jpg" alt="CANSYZ Counselor" class="pts-shaded-img">
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="journey-track-wrapper">
-                        <!-- Connecting Line Track -->
-                        <div class="journey-line-track">
-                            <span class="journey-track-airplane"><i class="fa-solid fa-plane"></i></span>
+            <!-- 5 Grid Cards -->
+            <div class="pts-cards-grid">
+                <!-- Card 01 -->
+                <div class="pts-card-box wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="pts-badge-pill pts-pill-navy">01</div>
+                    <div class="pts-card-icon-wrap">
+                        <svg width="60" height="60" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="18" r="7" stroke="#071b36" stroke-width="2.5"/>
+                            <path d="M12 36c0-6 5.373-10 12-10s12 4 12 10" stroke="#071b36" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="34" cy="14" r="5" fill="#d9232a"/>
+                            <path d="M32 14h4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="pts-card-heading">Career Counselling &amp; Education Planning</h4>
+                    <p class="pts-card-text">Personalised guidance to align your academic choices with long-term global career goals.</p>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="pts-card-box wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="pts-badge-pill pts-pill-red">02</div>
+                    <div class="pts-card-icon-wrap">
+                        <svg width="60" height="60" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="12" y="8" width="24" height="32" rx="4" stroke="#d9232a" stroke-width="2.5"/>
+                            <line x1="18" y1="16" x2="26" y2="16" stroke="#d9232a" stroke-width="2.5" stroke-linecap="round"/>
+                            <line x1="18" y1="22" x2="30" y2="22" stroke="#d9232a" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M26 34l8-8 2 2-8 8h-2v-2z" fill="#071b36"/>
+                        </svg>
+                    </div>
+                    <h4 class="pts-card-heading pts-heading-red">Language Test Preparation</h4>
+                    <p class="pts-card-text">Expert coaching for IELTS, TOEFL, and PTE exams to secure competitive language scores.</p>
+                </div>
+
+                <!-- Card 03 -->
+                <div class="pts-card-box wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="pts-badge-pill pts-pill-navy">03</div>
+                    <div class="pts-card-icon-wrap">
+                        <svg width="60" height="60" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 14a4 4 0 014-4h8l4 4h12a4 4 0 014 4v16a4 4 0 01-4 4H14a4 4 0 01-4-4V14z" stroke="#071b36" stroke-width="2.5"/>
+                        </svg>
+                    </div>
+                    <h4 class="pts-card-heading">Applications &amp; Documentation</h4>
+                    <p class="pts-card-text">Precision review of letters of recommendation, essays, transcripts, and swift university submission.</p>
+                </div>
+
+                <!-- Card 04 -->
+                <div class="pts-card-box wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="pts-badge-pill pts-pill-red">04</div>
+                    <div class="pts-card-icon-wrap">
+                        <svg width="60" height="60" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="12" y="10" width="24" height="28" rx="4" stroke="#d9232a" stroke-width="2.5"/>
+                            <circle cx="24" cy="24" r="7" stroke="#d9232a" stroke-width="2"/>
+                            <path d="M17 24h14M24 17v14" stroke="#d9232a" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h4 class="pts-card-heading pts-heading-red">Visa &amp; Pre-Departure Support</h4>
+                    <p class="pts-card-text">Thorough file compilation, mock visa interviews, and pre-departure briefings for smooth travel.</p>
+                </div>
+
+                <!-- Card 05 -->
+                <div class="pts-card-box wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="pts-badge-pill pts-pill-navy">05</div>
+                    <div class="pts-card-icon-wrap">
+                        <svg width="60" height="60" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="18" r="7" stroke="#071b36" stroke-width="2.5"/>
+                            <path d="M12 36c0-6 5.373-10 12-10s12 4 12 10" stroke="#071b36" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M34 26l2 4 4 1-3 3 1 4-4-2-4 2 1-4-3-3 4-1 2-4z" fill="#d9232a"/>
+                        </svg>
+                    </div>
+                    <h4 class="pts-card-heading">Student Success Services</h4>
+                    <p class="pts-card-text">Complete post-arrival orientation, SIM, banking, accommodation setup, and year-one success support.</p>
+                </div>
+            </div>
+
+            <!-- Bottom CTA Button & Sub-line -->
+            <div class="text-center pts-bottom-cta-wrap wow fadeInUp">
+                <a href="contact.html" class="pts-navy-cta-btn">
+                    Start Your Journey Today
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <p class="pts-bottom-tagline">
+                    One goal. Your success. <span class="pts-tag-pipe">|</span> Every step. Our support.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Path to Success Section End -->
+
+
+
+    <!-- CANSYZ 360 Section Start -->
+    <div class="c360-redesign">
+        <!-- Subtle world map watermark background -->
+        <div class="c360-map-watermark"></div>
+
+        <div class="container">
+            <!-- Section Header -->
+            <div class="c360-header text-center wow fadeInUp">
+                <div class="c360-badge-line">
+                    <img src="images/Flag_of_Canada_leaf.webp" alt="Canada Maple Leaf" class="c360-leaf-img" style="width: 20px; height: 20px; object-fit: contain;">
+                    <span>CANSYZ 360&deg;</span>
+                </div>
+                <h2 class="c360-main-title">CANSYZ <span class="c360-title-red">360&deg;</span></h2>
+                <h3 class="c360-subtitle">STUDENT SUCCESS PROGRAM</h3>
+                <p class="c360-desc">From your first consultation to your first year abroad,<br><span class="c360-desc-red">CANSYZ 360&deg;</span> supports every step of your journey.</p>
+            </div>
+
+            <!-- Desktop Infographic Layout -->
+            <div class="c360-infographic-container">
+                <!-- SVG Connectors Overlay -->
+                <svg class="c360-connectors-svg d-none d-lg-block" viewBox="0 0 1100 480">
+                    <!-- Card 01 to Discover (Top Left) -->
+                    <path d="M 320 80 H 380 L 430 110" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <circle cx="320" cy="80" r="3.5" fill="#071b36" />
+                    <circle cx="430" cy="110" r="3.5" fill="#071b36" />
+
+                    <!-- Card 07 to Succeed (Mid Left) -->
+                    <path d="M 320 240 H 390" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <circle cx="320" cy="240" r="3.5" fill="#071b36" />
+                    <circle cx="390" cy="240" r="3.5" fill="#071b36" />
+
+                    <!-- Card 06 to Arrive (Bottom Left) -->
+                    <path d="M 320 400 H 380 L 430 370" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <circle cx="320" cy="400" r="3.5" fill="#d9232a" />
+                    <circle cx="430" cy="370" r="3.5" fill="#d9232a" />
+
+                    <!-- Card 02 to Plan (Top Right) -->
+                    <path d="M 780 80 H 720 L 670 110" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <circle cx="780" cy="80" r="3.5" fill="#d9232a" />
+                    <circle cx="670" cy="110" r="3.5" fill="#d9232a" />
+
+                    <!-- Card 03 to Apply (Mid Right) -->
+                    <path d="M 780 240 H 710" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <circle cx="780" cy="240" r="3.5" fill="#071b36" />
+                    <circle cx="710" cy="240" r="3.5" fill="#071b36" />
+
+                    <!-- Card 04 to Visa (Bottom Right) -->
+                    <path d="M 780 400 H 720 L 670 370" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <circle cx="780" cy="400" r="3.5" fill="#d9232a" />
+                    <circle cx="670" cy="370" r="3.5" fill="#d9232a" />
+
+                    <!-- Card 05 to Prepare (Bottom Center) -->
+                    <path d="M 550 355 V 490" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <circle cx="550" cy="355" r="3.5" fill="#071b36" />
+                    <circle cx="550" cy="490" r="3.5" fill="#071b36" />
+                </svg>
+
+                <div class="c360-infographic">
+                    <!-- Left Column: Steps 01, 07, 06 -->
+                    <div class="c360-left-col">
+                        <!-- Step 01 - Discover -->
+                        <div class="c360-step-card c360-step-navy wow fadeInLeft" data-wow-delay="0.1s">
+                            <div class="c360-step-num c360-num-navy">01</div>
+                            <div class="c360-step-icon-box">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="c360-step-body">
+                                <h4>DISCOVER</h4>
+                                <ul>
+                                    <li>Understand your goals, strengths and career aspirations</li>
+                                    <li>Explore the best study options in Canada</li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="journey-cards-container">
-                            <!-- Service 1 -->
-                            <div class="journey-card-item wow fadeInUp" data-wow-delay="0.1s"
-                                style="--step-color: var(--primary-color);">
-                                <div class="journey-card-header">
-                                    <div class="journey-step-num">01</div>
-                                    <div class="journey-icon-box">
-                                        <img src="images/icon-services-1.svg" alt="Career Counselling">
-                                    </div>
-                                </div>
-                                <div class="journey-card-body">
-                                    <h3>Career Counselling & Education Planning</h3>
-                                    <p>Personalised guidance to align your academic choices with long-term global career
-                                        goals.</p>
-                                </div>
+                        <!-- Step 07 - Succeed -->
+                        <div class="c360-step-card c360-step-navy wow fadeInLeft" data-wow-delay="0.3s">
+                            <div class="c360-step-num c360-num-navy">07</div>
+                            <div class="c360-step-icon-box">
+                                <i class="fa-solid fa-graduation-cap"></i>
                             </div>
+                            <div class="c360-step-body">
+                                <h4>SUCCEED</h4>
+                                <ul>
+                                    <li>Continuous support throughout your first year abroad</li>
+                                    <li>We stay with you until you succeed</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                            <!-- Service 2 -->
-                            <div class="journey-card-item wow fadeInUp" data-wow-delay="0.2s"
-                                style="--step-color: var(--accent-color);">
-                                <div class="journey-card-header">
-                                    <div class="journey-step-num">02</div>
-                                    <div class="journey-icon-box">
-                                        <img src="images/icon-services-2.svg" alt="Language Test Prep">
-                                    </div>
-                                </div>
-                                <div class="journey-card-body">
-                                    <h3>Language Test Preparation</h3>
-                                    <p>Expert coaching for IELTS, TOEFL, and PTE exams to secure competitive language
-                                        scores.</p>
-                                </div>
+                        <!-- Step 06 - Arrive -->
+                        <div class="c360-step-card c360-step-red wow fadeInLeft" data-wow-delay="0.5s">
+                            <div class="c360-step-num c360-num-red">06</div>
+                            <div class="c360-step-icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
                             </div>
+                            <div class="c360-step-body">
+                                <h4>ARRIVE</h4>
+                                <ul>
+                                    <li>Airport pickup guidance and accommodation support</li>
+                                    <li>SIM, banking &amp; local orientation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-                            <!-- Service 3 -->
-                            <div class="journey-card-item wow fadeInUp" data-wow-delay="0.3s"
-                                style="--step-color: var(--primary-color);">
-                                <div class="journey-card-header">
-                                    <div class="journey-step-num">03</div>
-                                    <div class="journey-icon-box">
-                                        <img src="images/icon-services-3.svg" alt="Applications & Documentation">
-                                    </div>
-                                </div>
-                                <div class="journey-card-body">
-                                    <h3>Applications & Documentation</h3>
-                                    <p>Precision review of letters of recommendation, essays, transcripts, and swift
-                                        university submission.</p>
-                                </div>
-                            </div>
+                    <!-- Center Column: Ring -->
+                    <div class="c360-center-col">
+                        <div class="c360-ring-wrap wow zoomIn" data-wow-delay="0.2s">
+                            <!-- SVG segmented ring -->
+                            <svg class="c360-ring-svg" viewBox="0 0 320 320">
+                                <!-- Solid Navy Circle as Base -->
+                                <circle cx="160" cy="160" r="115" fill="none" stroke="#071b36" stroke-width="38" transform="rotate(-90, 160, 160)" />
+                                <!-- Red Circle Overlay with Custom Dasharray (Slice length = 103.2 based on circumference = 722.56) -->
+                                <circle cx="160" cy="160" r="115" fill="none" stroke="#d9232a" stroke-width="38" stroke-dasharray="103.2 103.2 103.2 103.2 103.2 206.4" transform="rotate(-90, 160, 160)" />
 
-                            <!-- Service 4 -->
-                            <div class="journey-card-item wow fadeInUp" data-wow-delay="0.4s"
-                                style="--step-color: var(--accent-color);">
-                                <div class="journey-card-header">
-                                    <div class="journey-step-num">04</div>
-                                    <div class="journey-icon-box">
-                                        <img src="images/icon-services-4.svg" alt="Visa & Pre-Departure">
-                                    </div>
-                                </div>
-                                <div class="journey-card-body">
-                                    <h3>Visa & Pre-Departure Support</h3>
-                                    <p>Thorough file compilation, mock visa interviews, and pre-departure briefings for
-                                        smooth travel.</p>
-                                </div>
+                                <!-- 7 White Dividing Lines to separate segments -->
+                                <!-- 12 o'clock -->
+                                <line x1="160" y1="64" x2="160" y2="26" stroke="#ffffff" stroke-width="2.5" />
+                                <!-- ~ -38.57 deg -->
+                                <line x1="235.1" y1="100.1" x2="267.1" y2="74.6" stroke="#ffffff" stroke-width="2.5" />
+                                <!-- ~ 12.86 deg -->
+                                <line x1="253.6" y1="181.4" x2="293.6" y2="190.5" stroke="#ffffff" stroke-width="2.5" />
+                                <!-- ~ 64.29 deg -->
+                                <line x1="201.6" y1="246.5" x2="219.4" y2="283.4" stroke="#ffffff" stroke-width="2.5" />
+                                <!-- ~ 115.71 deg -->
+                                <line x1="118.4" y1="246.5" x2="100.6" y2="283.4" stroke="#ffffff" stroke-width="2.5" />
+                                <!-- ~ 167.14 deg -->
+                                <line x1="66.4" y1="181.4" x2="26.4" y2="190.5" stroke="#ffffff" stroke-width="2.5" />
+                                <!-- ~ 218.57 deg -->
+                                <line x1="84.9" y1="100.1" x2="52.9" y2="74.6" stroke="#ffffff" stroke-width="2.5" />
+                            </svg>
+                            <!-- Ring icons positioned inside segments -->
+                            <div class="c360-ring-icon c360-ri-1"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <div class="c360-ring-icon c360-ri-2"><i class="fa-solid fa-clipboard-list"></i></div>
+                            <div class="c360-ring-icon c360-ri-3"><i class="fa-solid fa-file-signature"></i></div>
+                            <div class="c360-ring-icon c360-ri-4"><i class="fa-solid fa-passport"></i></div>
+                            <div class="c360-ring-icon c360-ri-5"><i class="fa-solid fa-briefcase"></i></div>
+                            <div class="c360-ring-icon c360-ri-6"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="c360-ring-icon c360-ri-7"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <!-- Center content -->
+                            <div class="c360-ring-center">
+                                <span class="c360-360">360&deg;</span>
+                                <span class="c360-support">SUPPORT</span>
+                                <span class="c360-atstep">AT EVERY STEP</span>
+                                <hr style="width: 36px; height: 2px; background-color: #d9232a; border: none; margin: 8px auto 6px auto; opacity: 1;">
+                                <i class="fa-solid fa-users c360-center-users-icon"></i>
                             </div>
+                        </div>
+                    </div>
 
-                            <!-- Service 5 -->
-                            <div class="journey-card-item wow fadeInUp" data-wow-delay="0.5s"
-                                style="--step-color: var(--primary-color);">
-                                <div class="journey-card-header">
-                                    <div class="journey-step-num">05</div>
-                                    <div class="journey-icon-box">
-                                        <img src="images/icon-blockquote.svg" alt="Student Success Services"
-                                            style="width: 28px; height: auto; transform: rotate(180deg); filter: brightness(0) invert(1);">
-                                    </div>
-                                </div>
-                                <div class="journey-card-body">
-                                    <h3>Student Success Services</h3>
-                                    <p>Complete post-arrival orientation, SIM, banking, accommodation setup, and
-                                        year-one success support.</p>
-                                </div>
+                    <!-- Right Column: Steps 02, 03, 04 -->
+                    <div class="c360-right-col">
+                        <!-- Step 02 - Plan -->
+                        <div class="c360-step-card c360-step-red wow fadeInRight" data-wow-delay="0.15s">
+                            <div class="c360-step-num c360-num-red">02</div>
+                            <div class="c360-step-icon-box">
+                                <i class="fa-solid fa-clipboard-list"></i>
                             </div>
+                            <div class="c360-step-body">
+                                <h4>PLAN</h4>
+                                <ul>
+                                    <li>Create a personalized study plan</li>
+                                    <li>Shortlist universities, courses &amp; pathway</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 03 - Apply -->
+                        <div class="c360-step-card c360-step-navy wow fadeInRight" data-wow-delay="0.3s">
+                            <div class="c360-step-num c360-num-navy">03</div>
+                            <div class="c360-step-icon-box">
+                                <i class="fa-solid fa-file-signature"></i>
+                            </div>
+                            <div class="c360-step-body">
+                                <h4>APPLY</h4>
+                                <ul>
+                                    <li>Complete applications with accuracy</li>
+                                    <li>SOP, LOR &amp; document preparation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 04 - Visa -->
+                        <div class="c360-step-card c360-step-red wow fadeInRight" data-wow-delay="0.45s">
+                            <div class="c360-step-num c360-num-red">04</div>
+                            <div class="c360-step-icon-box">
+                                <i class="fa-solid fa-passport"></i>
+                            </div>
+                            <div class="c360-step-body">
+                                <h4>VISA</h4>
+                                <ul>
+                                    <li>Expert visa guidance and documentation</li>
+                                    <li>Interview preparation and submission</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Step 05 center, Tagline left, CTA right -->
+            <div class="c360-bottom-row">
+                <!-- Bottom Left: Tagline Card -->
+                <div class="c360-bottom-left-col wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="c360-bottom-left-card">
+                        <div class="c360-canada-leaf-circle">
+                            <img src="images/Flag_of_Canada_leaf.webp" alt="Canada Maple Leaf">
+                        </div>
+                        <div class="c360-card-divider"></div>
+                        <div class="c360-tagline-text">
+                            <span class="c360-tag-red">One Goal. Your Success.</span><br>
+                            <span class="c360-tag-navy">Every Step. Our Support.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Center: Step 05 - Prepare -->
+                <div class="c360-bottom-center wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="c360-step-card c360-step-navy c360-step-horizontal">
+                        <div class="c360-step-num c360-num-navy">05</div>
+                        <div class="c360-step-icon-box">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="c360-step-body">
+                            <h4>PREPARE</h4>
+                            <ul>
+                                <li>Pre-departure orientation and travel planning</li>
+                                <li>Essentials for a smooth transition</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Right: CTA Card -->
+                <div class="c360-bottom-right-col wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="c360-bottom-right-card">
+                        <div class="c360-cta-left">
+                            <i class="fa-solid fa-graduation-cap c360-cta-cap-icon"></i>
+                        </div>
+                        <div class="c360-card-divider"></div>
+                        <div class="c360-cta-right">
+                            <p class="c360-cta-text">
+                                Your journey is unique.<br>
+                                Our support is <span class="c360-cta-red">360&deg;</span>.
+                            </p>
+                            <hr class="c360-cta-hr">
+                            <a href="contact.html" class="c360-cta-button-red">
+                                <span>Start Your Journey Today</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Global Journey Section End -->
 
-    <!-- CANSYZ 360 Section Start -->
-    <div class="cansyz-360-section">
+        <!-- Mobile View: Timeline Layout -->
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title text-center" style="margin-bottom: 50px;">
-                        <h2 class="wow fadeInUp"
-                            style="font-size: 52px; font-weight: 800; color: var(--primary-color);">CANSYZ <span
-                                style="color: var(--accent-color);">360&deg;</span></h2>
-                        <h3 class="wow fadeInUp" data-wow-delay="0.1s"
-                            style="font-size: 26px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--primary-color); margin-top: 10px;">
-                            STUDENT SUCCESS PROGRAM</h3>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s"
-                            style="max-width: 850px; margin: 20px auto 0 auto; font-size: 20px; line-height: 1.6;">Our
-                            unique 360&deg; approach supports students from their first counselling session through the
-                            successful completion of their first year abroad.</p>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <!-- Desktop View: Circular Infographic -->
-            <div class="cansyz-360-container">
-                <!-- Connect Dashed Ring -->
-                <div class="cansyz-360-dashed-ring"></div>
-
-                <!-- Central Circle -->
-                <div class="cansyz-360-circle-center wow zoomIn" data-wow-delay="0.1s">
-                    <!-- Alternating Segmented SVG Ring (thickness = 42px, radius = 139px, centered at 160,160) -->
-                    <svg viewBox="0 0 320 320"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
-                        <g transform="rotate(-112.5, 160, 160)">
-                            <!-- Blue segments: 109.17 length, 109.17 gap -->
-                            <circle cx="160" cy="160" r="139" fill="none" stroke="var(--primary-color)"
-                                stroke-width="42" stroke-dasharray="109.17 109.17" stroke-dashoffset="0" />
-                            <!-- Red segments: 109.17 length, 109.17 gap, offset by 109.17 -->
-                            <circle cx="160" cy="160" r="139" fill="none" stroke="var(--accent-color)" stroke-width="42"
-                                stroke-dasharray="109.17 109.17" stroke-dashoffset="109.17" />
-                        </g>
-                    </svg>
-
-                    <!-- Inner white-blue gradient circle -->
-                    <div class="cansyz-360-circle-inner">
-                        <!-- Faint Globe Overlay via inline SVG for high resolution -->
-                        <div class="cansyz-360-globe-bg">
-                            <svg viewBox="0 0 100 100"
-                                style="width: 100%; height: 100%; fill: none; stroke: var(--primary-color); stroke-width: 0.5; opacity: 0.15;">
-                                <!-- Longitudes -->
-                                <circle cx="50" cy="50" r="45" />
-                                <path d="M 50 5 A 45 45 0 0 0 50 95" />
-                                <path d="M 50 5 A 25 45 0 0 0 50 95" stroke-dasharray="2 1" />
-                                <path d="M 50 5 A 25 45 0 0 1 50 95" stroke-dasharray="2 1" />
-                                <path d="M 50 5 A 45 45 0 0 1 50 95" />
-                                <!-- Latitudes -->
-                                <line x1="5" y1="50" x2="95" y2="50" />
-                                <path d="M 12 30 Q 50 38 88 30" stroke-dasharray="1 1" />
-                                <path d="M 12 70 Q 50 62 88 70" stroke-dasharray="1 1" />
-                            </svg>
-                        </div>
-                        <div class="cansyz-360-center-content">
-                            <h2 class="deg-360">360<span>&deg;</span></h2>
-                            <span class="support-lbl">SUPPORT</span>
-                            <span class="step-lbl">AT EVERY STEP</span>
-                            <div class="maple-leaf">
-                                <i class="fa-solid fa-leaf"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Icons (Step Nodes) -->
-                <!-- Right Side (nodes 1, 2, 3, 4) - wipe-right-node animation -->
-                <div class="cansyz-360-step-node odd node-1 wow wipe-right-node" data-wow-delay="0.1s" title="Discover">
-                    <i class="fa-solid fa-binoculars"></i>
-                </div>
-                <div class="cansyz-360-step-node even node-2 wow wipe-right-node" data-wow-delay="0.2s" title="Plan">
-                    <i class="fa-solid fa-clipboard-list"></i>
-                </div>
-                <div class="cansyz-360-step-node odd node-3 wow wipe-right-node" data-wow-delay="0.3s" title="Apply">
-                    <i class="fa-solid fa-file-signature"></i>
-                </div>
-                <div class="cansyz-360-step-node even node-4 wow wipe-right-node" data-wow-delay="0.4s" title="Visa">
-                    <i class="fa-solid fa-passport"></i>
-                </div>
-
-                <!-- Left Side (nodes 5, 6, 7) - wipe-left-node animation -->
-                <div class="cansyz-360-step-node odd node-5 wow wipe-left-node" data-wow-delay="0.5s" title="Prepare">
-                    <i class="fa-solid fa-plane"></i>
-                </div>
-                <div class="cansyz-360-step-node even node-6 wow wipe-left-node" data-wow-delay="0.6s" title="Arrive">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div class="cansyz-360-step-node odd node-7 wow wipe-left-node" data-wow-delay="0.7s" title="Succeed">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div>
-
-                <!-- Content Blocks -->
-                <!-- Step 1 (Discover - Right) -->
-                <div class="cansyz-360-text-block odd text-block-1 wow wipe-right-text" data-wow-delay="0.15s">
-                    <h4><span class="badge-num">1</span> DISCOVER</h4>
-                    <ul>
-                        <li>Understand your goals, strengths and career aspirations</li>
-                        <li>Explore the best study options in Canada</li>
-                    </ul>
-                </div>
-
-                <!-- Step 2 (Plan - Right) -->
-                <div class="cansyz-360-text-block even text-block-2 wow wipe-right-text" data-wow-delay="0.25s">
-                    <h4><span class="badge-num">2</span> PLAN</h4>
-                    <ul>
-                        <li>Create a personalized study plan</li>
-                        <li>Shortlist universities, courses & pathway</li>
-                    </ul>
-                </div>
-
-                <!-- Step 3 (Apply - Right) -->
-                <div class="cansyz-360-text-block odd text-block-3 wow wipe-right-text" data-wow-delay="0.35s">
-                    <h4><span class="badge-num">3</span> APPLY</h4>
-                    <ul>
-                        <li>Complete applications with accuracy</li>
-                        <li>SOP, LOR & document preparation</li>
-                    </ul>
-                </div>
-
-                <!-- Step 4 (Visa - Right) -->
-                <div class="cansyz-360-text-block even text-block-4 wow wipe-right-text" data-wow-delay="0.45s">
-                    <h4><span class="badge-num">4</span> VISA</h4>
-                    <ul>
-                        <li>Expert visa guidance and documentation</li>
-                        <li>Interview preparation and submission</li>
-                    </ul>
-                </div>
-
-                <!-- Step 5 (Prepare - Left) -->
-                <div class="cansyz-360-text-block odd text-block-5 wow wipe-left-text" data-wow-delay="0.55s">
-                    <h4><span class="badge-num">5</span> PREPARE</h4>
-                    <ul>
-                        <li>Pre-departure orientation and travel planning</li>
-                        <li>Essentials for a smooth transition</li>
-                    </ul>
-                </div>
-
-                <!-- Step 6 (Arrive - Left) -->
-                <div class="cansyz-360-text-block even text-block-6 wow wipe-left-text" data-wow-delay="0.65s">
-                    <h4><span class="badge-num">6</span> ARRIVE</h4>
-                    <ul>
-                        <li>Airport pickup guidance and accommodation support</li>
-                        <li>SIM, banking & local orientation</li>
-                    </ul>
-                </div>
-
-                <!-- Step 7 (Succeed - Left) -->
-                <div class="cansyz-360-text-block odd text-block-7 wow wipe-left-text" data-wow-delay="0.75s">
-                    <h4><span class="badge-num">7</span> SUCCEED</h4>
-                    <ul>
-                        <li>Continuous support throughout your first year abroad</li>
-                        <li>We stay with you until you succeed</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Mobile View: Timeline Layout -->
             <div class="cansyz-360-mobile-timeline">
                 <div class="cansyz-360-mobile-header wow zoomIn">
                     <div class="cansyz-360-mobile-circle">
-                        <!-- Alternating Segmented SVG Ring for Mobile -->
-                        <svg viewBox="0 0 220 220"
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+                        <svg viewBox="0 0 220 220" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
                             <g transform="rotate(-112.5, 110, 110)">
-                                <!-- Blue segments: R = 95, Circumference = 596.9. Segment = 74.6 -->
-                                <circle cx="110" cy="110" r="95" fill="none" stroke="var(--primary-color)"
-                                    stroke-width="16" stroke-dasharray="74.6 74.6" stroke-dashoffset="0" />
-                                <!-- Red segments: offset by 74.6 -->
-                                <circle cx="110" cy="110" r="95" fill="none" stroke="var(--accent-color)"
-                                    stroke-width="16" stroke-dasharray="74.6 74.6" stroke-dashoffset="74.6" />
+                                <circle cx="110" cy="110" r="95" fill="none" stroke="var(--primary-color)" stroke-width="16" stroke-dasharray="74.6 74.6" stroke-dashoffset="0" />
+                                <circle cx="110" cy="110" r="95" fill="none" stroke="var(--accent-color)" stroke-width="16" stroke-dasharray="74.6 74.6" stroke-dashoffset="74.6" />
                             </g>
                         </svg>
-                        <div
-                            style="z-index: 5; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <div style="z-index: 5; text-align: center; display: flex; flex-direction: column; align-items: center;">
                             <h2 class="deg-360" style="font-size: 38px;">360&deg;</h2>
                             <span class="support-lbl">SUPPORT</span>
                             <span class="step-lbl">AT EVERY STEP</span>
-                            <i class="fa-solid fa-leaf maple-leaf"
-                                style="color: var(--accent-color); margin-top: 5px;"></i>
+                            <img src="images/Flag_of_Canada_leaf.webp" alt="Canada Maple Leaf" style="width: 22px; height: 22px; object-fit: contain; margin-top: 5px;">
                         </div>
                     </div>
                 </div>
 
                 <div class="cansyz-360-timeline-items">
-                    <!-- Step 1 -->
-                    <div class="cansyz-360-timeline-item odd wow fadeInLeft">
+                    <div class="cansyz-360-timeline-item odd wow fadeInLeft c360-step-01">
                         <div class="cansyz-360-timeline-badge">1</div>
                         <div class="cansyz-360-timeline-content">
                             <h4><i class="fa-solid fa-binoculars"></i> DISCOVER</h4>
@@ -675,33 +640,27 @@
                             </ul>
                         </div>
                     </div>
-
-                    <!-- Step 2 -->
-                    <div class="cansyz-360-timeline-item even wow fadeInRight">
+                    <div class="cansyz-360-timeline-item even wow fadeInRight c360-step-02">
                         <div class="cansyz-360-timeline-badge">2</div>
                         <div class="cansyz-360-timeline-content">
                             <h4><i class="fa-solid fa-clipboard-list"></i> PLAN</h4>
                             <ul>
                                 <li>Create a personalized study plan</li>
-                                <li>Shortlist universities, courses & pathway</li>
+                                <li>Shortlist universities, courses &amp; pathway</li>
                             </ul>
                         </div>
                     </div>
-
-                    <!-- Step 3 -->
-                    <div class="cansyz-360-timeline-item odd wow fadeInLeft">
+                    <div class="cansyz-360-timeline-item odd wow fadeInLeft c360-step-03">
                         <div class="cansyz-360-timeline-badge">3</div>
                         <div class="cansyz-360-timeline-content">
                             <h4><i class="fa-solid fa-file-signature"></i> APPLY</h4>
                             <ul>
                                 <li>Complete applications with accuracy</li>
-                                <li>SOP, LOR & document preparation</li>
+                                <li>SOP, LOR &amp; document preparation</li>
                             </ul>
                         </div>
                     </div>
-
-                    <!-- Step 4 -->
-                    <div class="cansyz-360-timeline-item even wow fadeInRight">
+                    <div class="cansyz-360-timeline-item even wow fadeInRight c360-step-04">
                         <div class="cansyz-360-timeline-badge">4</div>
                         <div class="cansyz-360-timeline-content">
                             <h4><i class="fa-solid fa-passport"></i> VISA</h4>
@@ -711,9 +670,7 @@
                             </ul>
                         </div>
                     </div>
-
-                    <!-- Step 5 -->
-                    <div class="cansyz-360-timeline-item odd wow fadeInLeft">
+                    <div class="cansyz-360-timeline-item odd wow fadeInLeft c360-step-05">
                         <div class="cansyz-360-timeline-badge">5</div>
                         <div class="cansyz-360-timeline-content">
                             <h4><i class="fa-solid fa-plane"></i> PREPARE</h4>
@@ -723,21 +680,17 @@
                             </ul>
                         </div>
                     </div>
-
-                    <!-- Step 6 -->
-                    <div class="cansyz-360-timeline-item even wow fadeInRight">
+                    <div class="cansyz-360-timeline-item even wow fadeInRight c360-step-06">
                         <div class="cansyz-360-timeline-badge">6</div>
                         <div class="cansyz-360-timeline-content">
                             <h4><i class="fa-solid fa-location-dot"></i> ARRIVE</h4>
                             <ul>
                                 <li>Airport pickup guidance and accommodation support</li>
-                                <li>SIM, banking & local orientation</li>
+                                <li>SIM, banking &amp; local orientation</li>
                             </ul>
                         </div>
                     </div>
-
-                    <!-- Step 7 -->
-                    <div class="cansyz-360-timeline-item odd wow fadeInLeft">
+                    <div class="cansyz-360-timeline-item odd wow fadeInLeft c360-step-07">
                         <div class="cansyz-360-timeline-badge">7</div>
                         <div class="cansyz-360-timeline-content">
                             <h4><i class="fa-solid fa-graduation-cap"></i> SUCCEED</h4>
@@ -771,7 +724,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row mobile-card-carousel-grid">
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item wow fadeInUp">
                         <div class="icon-box">
@@ -848,42 +801,10 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <!-- Our Consultancy images Start -->
-                    <div class="our-consultancy-images">
-                        <!-- Consultancy image Box 1 Start -->
-                        <div class="consultancy-image-box-1">
-                            <!-- Consultancy image 1 Start -->
-                            <div class="consultancy-img-1">
-                                <figure class="image-anime reveal">
-                                    <img src="images/our-counselling-process-1.png" alt="">
-                                </figure>
-                            </div>
-                            <!-- Consultancy image 1 End -->
-                        </div>
-                        <!-- Consultancy image Box 1 End -->
-
-                        <!-- Consultancy image Box 2 Start -->
-                        <div class="consultancy-image-box-2">
-                            <!-- Consultancy image 2 Start -->
-                            <div class="consultancy-img-2">
-                                <figure class="image-anime reveal">
-                                    <img src="images/our-counselling-process-2.png" alt="">
-                                </figure>
-                            </div>
-                            <!-- Consultancy image 2 End -->
-
-                            <!-- Consultancy image 3 Start -->
-                            <div class="consultancy-img-3">
-                                <figure class="image-anime reveal">
-                                    <img src="images/our-counselling-process-3.png" alt="">
-                                </figure>
-                            </div>
-                            <!-- Consultancy image 3 End -->
-                        </div>
-                        <!-- Consultancy image Box 2 End -->
-
-                        <!-- About Customer Box Start -->
-
-                        <!-- About Customer Box End -->
+                    <div class="our-consultancy-images consultancy-single-img">
+                        <figure class="image-anime reveal consultancy-main-figure">
+                            <img src="images/our-counselling-process-1.png" alt="Our Counselling Process" class="consultancy-single-photo">
+                        </figure>
                     </div>
                     <!-- Our Consultancy images End -->
                 </div>
@@ -1039,91 +960,148 @@
 
 
     <!-- Study Destinations Section Start -->
-    <div class="study-destinations-section">
+    <div class="study-destinations-section dest-redesign">
+        <div class="dest-map-bg"></div>
         <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
+            <div class="row dest-header-row align-items-center">
+                <div class="col-lg-5 col-md-12">
                     <div class="section-title">
-                        <h3 class="wow fadeInUp">Study Destinations</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Global Opportunities in Top Countries</h2>
+                        <div class="dest-badge wow fadeInUp">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>STUDY DESTINATIONS</span>
+                        </div>
+                        <h2 class="text-anime-style-3 dest-main-heading" data-cursor="-opaque">
+                            Global Opportunities<br>in <span style="color:var(--accent-color);">Top Countries</span>
+                        </h2>
                     </div>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>Making decisions about courses, universities, and budgets can be overwhelming. CANSYZ
-                            simplifies the choice, providing clear roadmaps for success.</p>
-                    </div>
+                <div class="col-lg-7 col-md-12">
+                    <p class="dest-desc wow fadeInUp" data-wow-delay="0.2s">Making decisions about courses, universities, and budgets can be overwhelming. CANSYZ simplifies the choice, providing clear roadmaps for success.</p>
                 </div>
             </div>
 
-            <div class="row justify-content-center">
+            <!-- Flat Destination Cards -->
+            <div class="row dest-cards-row mobile-card-carousel-row">
                 <!-- Canada -->
-                <div class="col-lg-3 col-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="why-canada.html" class="destination-card-link">
-                        <div class="destination-circle-card">
-                            <div class="circle-image-holder">
-                                <img src="https://images.unsplash.com/photo-1507992781348-310259076fe0?auto=format&fit=crop&w=500&q=80" alt="Canada">
-                                <div class="country-map-overlay">
-                                    <svg viewBox="0 0 100 100" fill="none">
-                                        <path d="M10,40 L18,35 L25,36 L30,28 L40,26 L48,22 L55,20 L58,15 L65,12 L72,20 L75,15 L80,22 L85,18 L90,26 L92,35 L88,40 L85,38 L82,48 L88,52 L84,58 L78,55 L75,62 L78,68 L72,70 L70,62 L60,65 L55,58 L45,62 L38,58 L28,64 L20,60 L18,52 L12,50 Z" fill="rgba(255,255,255,0.95)" stroke="var(--primary-color)" stroke-width="2" />
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="why-canada.html" class="dest-flat-card">
+                        <div class="dest-card-photo">
+                            <img src="https://images.unsplash.com/photo-1507992781348-310259076fe0?auto=format&fit=crop&w=600&q=80" alt="Canada">
+                        </div>
+                        <div class="dest-card-info">
+                            <div class="dest-card-title-row">
+                                <span class="dest-flag-icon">
+                                    <svg width="28" height="20" viewBox="0 0 640 480" style="border-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,0.18);">
+                                        <path fill="#d80027" d="M0 0h160v480H0zM480 0h160v480H480z"/>
+                                        <path fill="#ffffff" d="M160 0h320v480H160z"/>
+                                        <path fill="#d80027" d="M320 70l20 50 45-20-25 45 45 10-45 30 35 45-55-15 10 75-30-35-30 35 10-75-55 15 35-45-45-30 45-10-25-45 45 20z"/>
                                     </svg>
-                                </div>
+                                </span>
+                                <h3>Canada</h3>
                             </div>
-                            <h3 class="destination-title">CANADA</h3>
+                            <div class="dest-card-divider"></div>
+                            <p>Study at globally recognized universities with excellent post-study work opportunities and a clear pathway to long-term career growth.</p>
                         </div>
                     </a>
                 </div>
-
-                <!-- United Kingdom -->
-                <div class="col-lg-3 col-6 mb-4 wow fadeInUp" data-wow-delay="0.25s">
-                    <a href="countries.html" class="destination-card-link">
-                        <div class="destination-circle-card">
-                            <div class="circle-image-holder">
-                                <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=500&q=80" alt="UK">
-                                <div class="country-map-overlay">
-                                    <svg viewBox="0 0 100 100" fill="none">
-                                        <path d="M40,20 L45,15 L50,18 L52,25 L48,32 L45,38 L52,42 L55,38 L60,42 L65,50 L68,60 L65,70 L60,78 L55,80 L48,78 L45,72 L48,65 L44,60 L40,58 L38,52 L42,48 L35,42 L32,30 L38,25 Z M25,48 L30,44 L32,50 L28,55 Z" fill="rgba(255,255,255,0.95)" stroke="var(--primary-color)" stroke-width="2" />
+                <!-- UK -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="countries.html" class="dest-flat-card">
+                        <div class="dest-card-photo">
+                            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=600&q=80" alt="UK">
+                        </div>
+                        <div class="dest-card-info">
+                            <div class="dest-card-title-row">
+                                <span class="dest-flag-icon">
+                                    <svg width="28" height="20" viewBox="0 0 640 480" style="border-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,0.18);">
+                                        <path fill="#00247d" d="M0 0h640v480H0z"/>
+                                        <path fill="#fff" d="M0 0l640 480M640 0L0 480" stroke="#fff" stroke-width="60"/>
+                                        <path fill="#none" stroke="#cf142b" stroke-width="40" d="M0 0l640 480M640 0L0 480"/>
+                                        <path fill="#fff" d="M260 0h120v480H260zM0 180h640v120H0z"/>
+                                        <path fill="#cf142b" d="M280 0h80v480H280zM0 200h640v80H0z"/>
                                     </svg>
-                                </div>
+                                </span>
+                                <h3>UK</h3>
                             </div>
-                            <h3 class="destination-title">UK</h3>
+                            <div class="dest-card-divider"></div>
+                            <p>Access world-class education, diverse courses, and a rich cultural experience that opens doors to global career opportunities.</p>
                         </div>
                     </a>
                 </div>
-
                 <!-- Australia -->
-                <div class="col-lg-3 col-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <a href="countries.html" class="destination-card-link">
-                        <div class="destination-circle-card">
-                            <div class="circle-image-holder">
-                                <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=500&q=80" alt="Australia">
-                                <div class="country-map-overlay">
-                                    <svg viewBox="0 0 100 100" fill="none">
-                                        <path d="M15,48 L22,42 L32,45 L42,38 L55,40 L65,32 L78,35 L85,42 L88,52 L82,58 L85,68 L78,75 L70,72 L60,78 L50,75 L42,80 L32,75 L22,72 L18,65 L12,58 Z M72,82 L75,80 L78,85 L75,88 Z" fill="rgba(255,255,255,0.95)" stroke="var(--primary-color)" stroke-width="2" />
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="countries.html" class="dest-flat-card">
+                        <div class="dest-card-photo">
+                            <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=600&q=80" alt="Australia">
+                        </div>
+                        <div class="dest-card-info">
+                            <div class="dest-card-title-row">
+                                <span class="dest-flag-icon">
+                                    <svg width="28" height="20" viewBox="0 0 640 480" style="border-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,0.18);">
+                                        <path fill="#00247d" d="M0 0h640v480H0z"/>
+                                        <path fill="#fff" d="M0 0l320 240M320 0L0 240" stroke="#fff" stroke-width="30"/>
+                                        <path fill="none" stroke="#cf142b" stroke-width="20" d="M0 0l320 240M320 0L0 240"/>
+                                        <path fill="#fff" d="M130 0h60v240H130zM0 90h320v60H0z"/>
+                                        <path fill="#cf142b" d="M140 0h40v240H140zM0 100h320v40H0z"/>
+                                        <circle cx="480" cy="120" r="10" fill="#fff"/>
+                                        <circle cx="540" cy="220" r="10" fill="#fff"/>
+                                        <circle cx="480" cy="320" r="10" fill="#fff"/>
+                                        <circle cx="420" cy="200" r="8" fill="#fff"/>
+                                        <circle cx="160" cy="360" r="18" fill="#fff"/>
                                     </svg>
-                                </div>
+                                </span>
+                                <h3>Australia</h3>
                             </div>
-                            <h3 class="destination-title">AUSTRALIA</h3>
+                            <div class="dest-card-divider"></div>
+                            <p>Enjoy high-quality education, a vibrant lifestyle, and excellent post-study options in one of the world's most welcoming countries.</p>
                         </div>
                     </a>
                 </div>
-
                 <!-- Europe -->
-                <div class="col-lg-3 col-6 mb-4 wow fadeInUp" data-wow-delay="0.55s">
-                    <a href="countries.html" class="destination-card-link">
-                        <div class="destination-circle-card">
-                            <div class="circle-image-holder">
-                                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=80" alt="Europe">
-                                <div class="country-map-overlay">
-                                    <svg viewBox="0 0 100 100" fill="none">
-                                        <path d="M20,25 L35,22 L45,28 L55,20 L65,18 L75,25 L88,32 L92,45 L85,55 L78,50 L75,58 L68,62 L60,58 L52,65 L48,58 L40,62 L32,58 L25,65 L22,55 L28,48 L15,42 L18,32 Z" fill="rgba(255,255,255,0.95)" stroke="var(--primary-color)" stroke-width="2" />
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <a href="countries.html" class="dest-flat-card">
+                        <div class="dest-card-photo">
+                            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Europe">
+                        </div>
+                        <div class="dest-card-info">
+                            <div class="dest-card-title-row">
+                                <span class="dest-flag-icon">
+                                    <svg width="28" height="20" viewBox="0 0 640 480" style="border-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,0.18);">
+                                        <path fill="#003399" d="M0 0h640v480H0z"/>
+                                        <g fill="#ffcc00" transform="translate(320 240) scale(1.6)">
+                                            <circle cx="0" cy="-60" r="8"/><circle cx="30" cy="-52" r="8"/><circle cx="52" cy="-30" r="8"/>
+                                            <circle cx="60" cy="0" r="8"/><circle cx="52" cy="30" r="8"/><circle cx="30" cy="52" r="8"/>
+                                            <circle cx="0" cy="60" r="8"/><circle cx="-30" cy="52" r="8"/><circle cx="-52" cy="30" r="8"/>
+                                            <circle cx="-60" cy="0" r="8"/><circle cx="-52" cy="-30" r="8"/><circle cx="-30" cy="-52" r="8"/>
+                                        </g>
                                     </svg>
-                                </div>
+                                </span>
+                                <h3>Europe</h3>
                             </div>
-                            <h3 class="destination-title">EUROPE</h3>
+                            <div class="dest-card-divider"></div>
+                            <p>Explore diverse programs, affordable education in many countries, and incredible opportunities to build a global future.</p>
                         </div>
                     </a>
+                </div>
+            </div>
+
+            <!-- Trust Strip + CTA -->
+            <div class="row dest-bottom-row wow fadeInUp">
+                <div class="col-12">
+                    <div class="dest-trust-strip">
+                        <span><i class="fa-regular fa-user"></i> Personalized counselling</span>
+                        <span class="dest-trust-sep">|</span>
+                        <span><i class="fa-regular fa-solid fa-briefcase"></i> Transparent guidance</span>
+                        <span class="dest-trust-sep">|</span>
+                        <span><i class="fa-regular fa-file-lines"></i> End-to-end application support</span>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="contact.html" class="dest-cta-btn">
+                            <i class="fa-regular fa-calendar"></i>
+                            Book Your Free Consultation
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1182,27 +1160,10 @@
                 </div>
 
                 <div class="col-lg-7">
-                    <div class="why-choose-image">
-                        <div class="apply-now-img">
-                            <img src="images/apply-now-circle-img.svg" alt="">
-                        </div>
-
-                        <div class="why-choose-img-1">
-                            <figure class="image-anime reveal">
-                                <img src="images/why-book-consultation-1.png" alt="">
-                            </figure>
-                        </div>
-
-                        <div class="why-choose-img-2">
-                            <figure class="image-anime reveal">
-                                <img src="images/why-book-consultation-2.png" alt="">
-                            </figure>
-                        </div>
-
-                        <div class="experience-counter-box">
-                            <h2><span class="counter">100</span>%</h2>
-                            <p>Student First Approach</p>
-                        </div>
+                    <div class="why-choose-image-single">
+                        <figure class="image-anime reveal">
+                            <img src="images/why-book-consultation-2.png" alt="Why Book a Free Consultation" style="width:100%;height:100%;object-fit:cover;border-radius:16px;display:block;">
+                        </figure>
                     </div>
                 </div>
             </div>
@@ -1211,78 +1172,105 @@
     <!-- Why Book a Free Consultation Section End -->
 
     <!-- Footer Start -->
-    <footer class="main-footer">
+    <footer class="main-footer footer-redesign">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-12">
-                    <div class="about-footer">
-                        <div class="footer-logo">
-                            <img src="images/cansys-international-logo.png" alt="CANSYZ Logo" style="max-height: 70px;">
+            <div class="row footer-main-row">
+
+                <!-- Col 1: Logo + Leaf + Tagline + Social -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-brand">
+                        <div class="footer-logo-new">
+                            <img src="images/cansys-international-logo.png" alt="CANSYZ Logo" class="footer-logo-img">
                         </div>
-                        <div class="about-footer-content">
-                            <p>Creating Global Opportunities. Empowering students to build successful global futures
-                                through honest guidance and personalized career planning.</p>
+                        <div class="footer-leaf-wrap">
+                            <img src="images/Flag_of_Canada_leaf.webp" alt="Canada Maple Leaf" class="footer-leaf-img">
                         </div>
-                        <div class="footer-social-links">
-                            <ul>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            </ul>
+                        <p class="footer-tagline">Creating global opportunities. Empowering students to build successful global futures through honest guidance and personalized career planning.</p>
+                        <div class="footer-social-new">
+                            <a href="#" class="footer-soc-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="footer-soc-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="footer-soc-icon"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="footer-soc-icon"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="footer-links">
-                        <h3>Our Services</h3>
+                <!-- Col 2: Our Services -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-links-new">
+                        <h4 class="footer-col-title">Our Services</h4>
+                        <div class="footer-col-underline"></div>
                         <ul>
-                            <li><a href="services.html">University Admission</a></li>
-                            <li><a href="services.html">Documentation Support</a></li>
-                            <li><a href="services.html">Visa Assistance</a></li>
-                            <li><a href="services.html">Pre-Departure Orientation</a></li>
-                            <li><a href="services.html">Post-Arrival Support</a></li>
+                            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> University Admission</a></li>
+                            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Documentation Support</a></li>
+                            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Visa Assistance</a></li>
+                            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Pre-Departure Orientation</a></li>
+                            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Post-Arrival Support</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-6">
-                    <div class="footer-links">
-                        <h3>Quick Links</h3>
+                <!-- Col 3: Quick Links -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-links-new">
+                        <h4 class="footer-col-title">Quick Links</h4>
+                        <div class="footer-col-underline"></div>
                         <ul>
-                            <li><a href="about.html">About CANSYZ</a></li>
-                            <li><a href="process.html">Our Process</a></li>
-                            <li><a href="countries.html">Study Destinations</a></li>
-                            <li><a href="founder.html">Founder Message</a></li>
+                            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About CANSYZ</a></li>
+                            <li><a href="process.html"><i class="fa-solid fa-chevron-right"></i> Our Process</a></li>
+                            <li><a href="countries.html"><i class="fa-solid fa-chevron-right"></i> Study Destinations</a></li>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Resources</a></li>
+                            <li><a href="founder.html"><i class="fa-solid fa-chevron-right"></i> Founder Message</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-5">
-                    <div class="footer-newsletter-box footer-links">
-                        <h3>Contact Info</h3>
-                        <p style="color: #b5b5b5; line-height: 1.6; font-size: 14px;">
-                            Spencer Plaza, 3rd Floor, No. 769, Anna Salai, Chennai - 600002, Tamil Nadu, India.<br>
-                            <strong>Phone:</strong> +91 74488 65000, +91 98407 65000<br>
-                            <strong>Email:</strong> info@cansyz.com
-                        </p>
+                <!-- Col 4: Contact Info -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-links-new">
+                        <h4 class="footer-col-title">Contact Info</h4>
+                        <div class="footer-col-underline"></div>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fa-solid fa-location-dot footer-contact-icon"></i>
+                                <span>Spencer Plaza, 3rd Floor, No. 769, Anna Salai, Chennai - 600002, Tamil Nadu, India.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone footer-contact-icon"></i>
+                                <span>+91 74488 65000, +91 98407 65000</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-envelope footer-contact-icon"></i>
+                                <span>info@cansyz.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-clock footer-contact-icon"></i>
+                                <span>Mon - Sat: 10:00 AM - 7:00 PM<br>Sunday: By Appointment</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="footer-copyright">
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom-bar">
+            <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="footer-copyright-text">
-                            <p>Copyright &copy; 2026 CANSYZ. All Rights Reserved.</p>
-                        </div>
+                    <div class="col-md-6 col-12">
+                        <p class="footer-copyright-new">&copy; 2026 CANSYZ. All Rights Reserved.</p>
                     </div>
-                    <div class="col-md-6">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="about.html">about us</a></li>
-                                <li><a href="contact.html">contact us</a></li>
-                            </ul>
+                    <div class="col-md-6 col-12">
+                        <div class="footer-bottom-nav">
+                            <a href="index.html">Home</a>
+                            <span class="fbn-sep">|</span>
+                            <a href="about.html">About Us</a>
+                            <span class="fbn-sep">|</span>
+                            <a href="services.html">Services</a>
+                            <span class="fbn-sep">|</span>
+                            <a href="countries.html">Destinations</a>
+                            <span class="fbn-sep">|</span>
+                            <a href="contact.html">Contact Us</a>
                         </div>
                     </div>
                 </div>
