@@ -264,7 +264,7 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	max-width: 66px;
+	max-width: 100px;
 	transform: translate(-50%, -50%);
 }
 
@@ -1025,7 +1025,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .about-us {
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .about-us-images {
@@ -1173,7 +1173,7 @@ header.main-header .header-sticky.active {
 
 .our-services {
 	background: var(--secondary-color);
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .service-item {
@@ -1330,7 +1330,7 @@ header.main-header .header-sticky.active {
 
 .our-consultancy {
 	position: relative;
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .our-consultancy::before {
@@ -1943,7 +1943,7 @@ header.main-header .header-sticky.active {
 
 .why-choose-us {
 	background: var(--secondary-color);
-	padding: 100px 0;
+	padding: 40px 0;
 }
 
 .why-choose-content {
@@ -6082,7 +6082,7 @@ h1 span {
 /* Section Container */
 .c360-redesign {
 	position: relative;
-	padding: 85px 0 65px;
+	padding: 50px 0 65px;
 	background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)),
 		url('../images/global_journey_parallax_bg.png') no-repeat center center;
 	background-size: cover;
@@ -6183,6 +6183,7 @@ h1 span {
 	height: 100%;
 	pointer-events: none;
 	z-index: 1;
+	overflow: visible !important;
 }
 
 /* Infographic 3-Column Layout */
@@ -9072,7 +9073,7 @@ header.main-header {
 .hero-desc {
 	font-family: 'Afacad Flux', sans-serif !important;
 	font-size: 16px;
-	color: #475569;
+	color: #071b36;
 	line-height: 1.7;
 	max-width: 460px;
 	margin-bottom: 36px;
@@ -9167,7 +9168,8 @@ header.main-header {
 	}
 	.hero-new::before {
 		width: 100%;
-		background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 100%);
+		height: 100%;
+		background: linear-gradient(90deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.88) 50%, rgba(255,255,255,0.75) 100%);
 	}
 	.hero-content-new { padding: 20px 24px !important; }
 	.hero-heading { font-size: 38px; }
@@ -9182,7 +9184,7 @@ header.main-header {
 .pts-section-new {
 	background: #ffffff;
 	position: relative;
-	padding: 85px 0 75px;
+	padding: 85px 0 50px;
 	overflow: hidden;
 	border-top: 1px solid #e2e8f0;
 	border-bottom: 1px solid #e2e8f0;
@@ -9372,7 +9374,7 @@ header.main-header {
 
 .pts-card-heading {
 	font-family: 'Afacad Flux', sans-serif !important;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 700;
 	color: #071b36;
 	line-height: 1.35;
@@ -9386,7 +9388,7 @@ header.main-header {
 
 .pts-card-text {
 	font-family: 'Afacad Flux', sans-serif !important;
-	font-size: 13px;
+	font-size: 15px;
 	color: #64748b;
 	line-height: 1.55;
 	margin: 0;
@@ -9491,7 +9493,7 @@ header.main-header {
 .dest-redesign {
 	background: #ffffff;
 	position: relative;
-	padding: 90px 0 80px;
+	padding: 40px 0 40px;
 	overflow: hidden;
 	border-top: 1px solid #e2e8f0;
 }
