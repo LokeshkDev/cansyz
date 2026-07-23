@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="CANSYZ International - Your trusted partner for study abroad. Honest guidance, personalized counselling, and end-to-end support for students aspiring to study in Canada.">
+    <meta name="keywords" content="study abroad, Canada, education consultancy, CANSYZ, international students, visa assistance">
+    <meta name="author" content="CANSYZ International">
+    <title>CANSYZ - About Us | Your Trusted Study Abroad Partner</title>
+    <link rel="shortcut icon" type="image/png" href="images/Flag_of_Canada_leaf.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <style>
+        :root {
+            --about-accent: var(--accent-color, #BE0B32);
+            --about-navy: var(--primary-color, #002768);
+            --about-dark: #071b36;
+        }
+        .about-hero-section {
+            padding: 80px 0 60px;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .about-hero-section::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(190,11,50,0.04) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .about-hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        .about-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .about-hero-badge img {
+            width: 26px;
+            height: auto;
+        }
+        .about-hero-badge span {
+            font-family: 'Afacad Flux', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--about-dark);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        .about-hero-heading {
+            font-family: 'Afacad Flux', sans-serif;
+            font-size: 58px;
+            font-weight: 800;
+            color: var(--about-dark);
+            line-height: 1.1;
+            margin: 0 0 16px 0;
+        }
+        .about-hero-heading .highlight-red {
+            color: var(--about-accent);
+        }
+        .about-hero-desc {
+            font-size: 18px;
+            color: #556171;
+            line-height: 1.7;
+            max-width: 520px;
+            margin-bottom: 12px;
+        }
+        .about-hero-btns {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .about-hero-img-wrap {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,39,104,0.10);
+        }
+        .about-hero-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+        }
+        .about-hero-img-wrap::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(0deg, rgba(0,39,104,0.06) 0%, transparent 100%);
+            pointer-events: none;
+        }
+        .about-hero-img-glow {
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(190,11,50,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Why Choose Premium Cards */
+        .wcu-premium-section {
+            background: var(--secondary-color, #EFF4FA99);
+            padding: 25px 0;
+        }
+        .wcu-premium-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 36px 28px 32px;
+            height: 100%;
+            box-shadow: 0 4px 20px rgba(0,39,104,0.06);
+            border-top: 3px solid transparent;
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .wcu-premium-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0,39,104,0.12);
+        }
+        .wcu-premium-card .wcu-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 26px;
+            transition: all 0.35s ease;
+        }
+        .wcu-premium-card:hover .wcu-icon {
+            color: #ffffff !important;
+            transform: scale(1.05) rotateY(6deg);
+        }
+        .wcu-premium-card:hover .wcu-icon i,
+        .wcu-premium-card:hover .wcu-icon svg {
+            color: #ffffff !important;
+        }
+        .wcu-premium-card:hover .wcu-icon img {
+            filter: brightness(0) invert(1);
+        }
+        .wcu-premium-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--about-dark);
+            margin-bottom: 8px;
+            font-family: 'Afacad Flux', sans-serif;
+        }
+        .wcu-premium-card p {
+            font-size: 17px;
+            color: #556171;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .wcu-premium-card .wcu-hover-shine {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+        .wcu-premium-card:hover .wcu-hover-shine {
+            opacity: 1;
+        }
+        .wcu-premium-card.wcu-red {
+            border-top-color: transparent;
+        }
+        .wcu-premium-card.wcu-red:hover {
+            border-top-color: var(--about-accent);
+        }
+        .wcu-premium-card.wcu-red .wcu-icon {
+            background: rgba(190,11,50,0.08);
+            color: var(--about-accent);
+        }
+        .wcu-premium-card.wcu-red:hover .wcu-icon {
+            background: var(--about-accent);
+            color: #ffffff !important;
+        }
+        .wcu-premium-card.wcu-red:hover .wcu-icon i,
+        .wcu-premium-card.wcu-red:hover .wcu-icon svg {
+            color: #ffffff !important;
+        }
+        .wcu-premium-card.wcu-blue {
+            border-top-color: transparent;
+        }
+        .wcu-premium-card.wcu-blue:hover {
+            border-top-color: var(--about-navy);
+        }
+        .wcu-premium-card.wcu-blue .wcu-icon {
+            background: rgba(0,39,104,0.08);
+            color: var(--about-navy);
+        }
+        .wcu-premium-card.wcu-blue:hover .wcu-icon {
+            background: var(--about-navy);
+            color: #ffffff !important;
+        }
+        .wcu-premium-card.wcu-blue:hover .wcu-icon i,
+        .wcu-premium-card.wcu-blue:hover .wcu-icon svg {
+            color: #ffffff !important;
+        }
+
+        /* Our Commitment */
+        /* Mission Vision */
+        .mv-section {
+            padding: 60px 0;
+        }
+        .mv-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 44px 36px;
+            height: 100%;
+            box-shadow: 0 6px 24px rgba(0,39,104,0.06);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 380px;
+        }
+        .mv-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0,39,104,0.12);
+        }
+        .mv-bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 0;
+            transition: transform 0.4s ease;
+        }
+        .mv-card:hover .mv-bg-img {
+            transform: scale(1.06);
+        }
+        .mv-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.88); /* light color overlay */
+            z-index: 1;
+            transition: background 0.3s ease;
+        }
+        .mv-card:hover .mv-overlay {
+            background: rgba(255, 255, 255, 0.82);
+        }
+        .mv-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+        .mv-card .mv-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 18px;
+        }
+        .mv-card .mv-icon.mission-icon {
+            background: rgba(190,11,50,0.10);
+            color: var(--about-accent);
+        }
+        .mv-card .mv-icon.vision-icon {
+            background: rgba(0,39,104,0.10);
+            color: var(--about-navy);
+        }
+        .mv-card h3 {
+            font-family: 'Afacad Flux', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--about-dark);
+            margin-bottom: 12px;
+        }
+        .mv-card p {
+            font-size: 20px;
+            color: #556171;
+            line-height: 1.7;
+            margin: 0;
+        }
+        .mv-card .mv-accent-bar {
+            width: 40px;
+            height: 3px;
+            border-radius: 2px;
+            margin-bottom: 16px;
+        }
+        .mv-card .mv-accent-bar.mission-bar {
+            background: var(--about-accent);
+        }
+        .mv-card .mv-accent-bar.vision-bar {
+            background: var(--about-navy);
+        }
+
+        /* Student Journey Timeline */
+        .journey-section {
+            padding: 80px 0;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .journey-map-watermark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/global_journey_parallax_bg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            opacity: 0.06;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .journey-section .container {
+            position: relative;
+            z-index: 1;
+        }
+        .journey-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(190,11,50,0.15), transparent);
+            z-index: 1;
+        }
+        .journey-timeline {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 40px 0 20px;
+            overflow-x: auto;
+            gap: 0;
+        }
+        .journey-timeline::before {
+            content: '';
+            position: absolute;
+            top: 80px;
+            left: 60px;
+            right: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--about-accent) 0%, var(--about-navy) 50%, var(--about-accent) 100%);
+            border-radius: 2px;
+            opacity: 0.3;
+        }
+        .journey-step {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+            position: relative;
+            padding: 0 8px;
+        }
+        .journey-step .journey-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #fff;
+            border: 2px solid var(--about-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 20px;
+            color: var(--about-accent);
+            position: relative;
+            z-index: 2;
+            transition: all 0.35s ease;
+            box-shadow: 0 4px 12px rgba(190,11,50,0.10);
+        }
+        .journey-step:hover .journey-icon {
+            background: var(--about-accent);
+            color: #fff;
+            transform: scale(1.1);
+            box-shadow: 0 8px 24px rgba(190,11,50,0.20);
+        }
+        .journey-step .journey-label {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--about-dark);
+            line-height: 1.3;
+            max-width: 110px;
+            margin: 0 auto;
+        }
+        .journey-arrow {
+            display: flex;
+            align-items: center;
+            color: var(--about-accent);
+            font-size: 14px;
+            opacity: 0.4;
+            flex-shrink: 0;
+            padding: 0 2px;
+        }
+        .journey-steps-wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+            .journey-steps-wrapper {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding-bottom: 16px;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+            }
+            .journey-step { min-width: 110px; scroll-snap-align: start; }
+            .journey-timeline::before { display: none; }
+        }
+
+        /* Why Study in Canada */
+        .why-canada-section {
+            background: var(--secondary-color, #EFF4FA99);
+            padding: 80px 0;
+        }
+        .why-canada-section .row > [class*="col-"] {
+            display: flex;
+        }
+        .why-canada-visual-wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 16px 48px rgba(0,39,104,0.10);
+        }
+        .why-canada-img-box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .why-canada-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .why-canada-badge {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 10px 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+        }
+        .why-canada-badge.badge-top {
+            top: 20px;
+            left: 20px;
+        }
+        .why-canada-badge.badge-bottom {
+            bottom: 20px;
+            left: 20px;
+        }
+        .badge-icon-wrap {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .badge-icon-wrap.red-bg {
+            background: var(--about-accent);
+        }
+        .badge-icon-wrap.blue-bg {
+            background: var(--about-navy, #002768);
+        }
+        .badge-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .badge-text strong {
+            font-size: 14px;
+            color: var(--about-dark);
+            line-height: 1.2;
+        }
+        .badge-text span {
+            font-size: 12px;
+            color: #556171;
+        }
+        .why-canada-cards-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        .why-canada-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 2px 8px rgba(0,39,104,0.04);
+            transition: all 0.25s ease;
+        }
+        .why-canada-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,39,104,0.10);
+        }
+        .why-canada-card .wcc-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        .why-canada-card.card-red .wcc-icon {
+            background: rgba(190,11,50,0.10);
+            color: var(--about-accent);
+        }
+        .why-canada-card.card-blue .wcc-icon {
+            background: rgba(0,39,104,0.10);
+            color: var(--about-navy);
+        }
+        .why-canada-card .wcc-info h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--about-dark);
+            margin-bottom: 2px;
+        }
+        .why-canada-card .wcc-info p {
+            font-size: 16px;
+            color: #556171;
+            margin: 0;
+        }
+        .why-canada-content-wrap {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* CTA Section */
+        .about-cta-section {
+            padding: 90px 0;
+            background: linear-gradient(135deg, #071b36 0%, #0a2a4a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .about-cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('images/canada_students_hero_bg.png') center/cover no-repeat;
+            opacity: 0.10;
+            pointer-events: none;
+        }
+        .about-cta-section .cta-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .about-cta-section .cta-content h2 {
+            font-family: 'Afacad Flux', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 14px;
+        }
+        .about-cta-section .cta-content p {
+            font-size: 17px;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        .about-cta-section .cta-btns {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Section spacing helpers */
+        .section-pad-sm { padding: 50px 0; }
+
+        /* Responsive adjustments */
+        @media (max-width: 991px) {
+            .about-hero-heading { font-size: 36px; }
+            .about-hero-section { padding: 50px 0 40px; }
+            .about-hero-img-wrap { margin-top: 30px; }
+            .mv-card { padding: 32px 24px; }
+            .journey-steps-wrapper { flex-wrap: nowrap; }
+            .about-cta-section .cta-content h2 { font-size: 32px; }
+            .mv-section { padding: 40px 0; }
+        }
+        @media (max-width: 576px) {
+            .about-hero-heading { font-size: 30px; }
+            .about-hero-btns { flex-direction: column; }
+            .about-hero-btns .hero-btn-primary,
+            .about-hero-btns .hero-btn-outline { justify-content: center; }
+            .wcu-premium-card { padding: 28px 20px; }
+            .journey-step { min-width: 100px; }
+            .why-canada-feature span { font-size: 14px; }
+            .mv-section { padding: 30px 0; }
+        }
+
+        .wcu-header-section {
+            padding: 40px 0 0;
+            background: var(--secondary-color, #EFF4FA99);
+        }
+    </style>
+</head>
+
+<body><div id="loading-icon"><img src="images/Flag_of_Canada_leaf.webp" alt="" class="canada-loader-leaf"></div>
+        </div>
+    </div>
+
+    <div class="topbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="topbar-contact-info">
+                        <ul>
+                            <li><i class="fa-regular fa-clock"></i> Mon - Sat: 10:00 AM - 6:00 PM</li>
+                            <li><i class="fa-regular fa-envelope"></i> <a href="mailto:info@cansyz.com">info@cansyz.com</a></li>
+                            <li><i class="fa-solid fa-phone"></i> <a href="tel:+917448865000">+91 74488 65000</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="topbar-social-icons">
+                        <span class="social-label">Follow us:</span>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header header-redesign">
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="./"><img src="images/cansys-international-logo.png" alt="CANSYZ Logo" style="max-height: 70px;"></a>
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper ms-auto">
+                            <ul class="navbar-nav ms-auto" id="menu">
+                                <li class="nav-item active"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="cansyz-360.html">Cansyz 360</a></li>
+                                <li class="nav-item"><a class="nav-link" href="why-canada.html">Why Canada</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="header-hamburger-btn d-none d-lg-flex" type="button">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+
+    <div class="page-header parallaxie" style="background:linear-gradient(135deg,rgba(255, 255, 255, 0.88) 0%,rgba(255, 255, 255, 0.65) 45%,rgba(255, 255, 255, 0.15) 100%),url('images/hero_student_canada_banner.jpg') center center/cover no-repeat fixed; position: relative; overflow: hidden;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="row align-items-center">
+                <div class="col-lg-12" style="padding-top: 60px;">
+                    <div class="page-header-box">
+                        <h1 class="text-anime-style-3" style="color: #BE0B32;" data-cursor="-opaque">About Us</h1>
+                        <nav class="wow fadeInUp">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./">home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">about us</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECTION 1 — HERO ABOUT                       -->
+    <!-- ============================================ -->
+    <section class="about-hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-hero-content">
+                        <div class="about-hero-badge wow fadeInUp">
+                            <img src="images/Flag_of_Canada_leaf.webp" alt="Canada Maple Leaf">
+                            <span>ABOUT CANSYZ</span>
+                        </div>
+                        <h1 class="about-hero-heading wow fadeInUp" data-wow-delay="0.1s">
+                            Guiding Dreams.<br>
+                            <span class="highlight-red">Building Futures.</span>
+                        </h1>
+                        <p class="about-hero-desc wow fadeInUp" data-wow-delay="0.15s">At CANSYZ International, we understand that studying abroad is more than just getting admission—it is about shaping a successful future.</p>
+                        <p class="about-hero-desc wow fadeInUp" data-wow-delay="0.2s">Our mission is to provide honest guidance, personalized counselling, and complete end-to-end support that empowers students to achieve their academic and career aspirations in Canada.</p>
+                        <p class="about-hero-desc wow fadeInUp" data-wow-delay="0.25s">With a student-first approach and complete transparency, we stand beside every student from the first consultation until the successful completion of their first year abroad.</p>
+                        <p class="about-hero-desc wow fadeInUp" data-wow-delay="0.3s">We don't just open doors to universities—we open doors to opportunities, personal growth, and a successful global future.</p>
+                        <div class="about-hero-btns wow fadeInUp" data-wow-delay="0.35s">
+                            <a href="contact.html" class="hero-btn-primary">
+                                <i class="fa-regular fa-calendar"></i>
+                                Book a Free Consultation
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="countries.html" class="hero-btn-outline">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Explore Study Destinations
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-hero-img-wrap wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="about-hero-img-glow"></div>
+                        <img src="images/about-cansyz-2.png" alt="Professional education consultant counselling students about study abroad plans" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 2 — WHY CHOOSE CANSYZ (Premium Cards)-->
+    <!-- ============================================ -->
+    <section class="wcu-header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center wow fadeInUp">
+                        <h3>Why Choose CANSYZ</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Your Trusted Partners in International Success</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">CANSYZ is built on trust, transparency, and a commitment to your long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wcu-premium-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="wcu-premium-card wcu-red wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="wcu-hover-shine"></div>
+                        <div class="wcu-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Honest & Transparent Guidance</h3>
+                        <p>We recommend what is best for your future—not what is most profitable.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="wcu-premium-card wcu-blue wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="wcu-hover-shine"></div>
+                        <div class="wcu-icon">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <h3>Personalized Career Planning</h3>
+                        <p>Solutions tailored to your academic goals, strengths, interests, and future aspirations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="wcu-premium-card wcu-red wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="wcu-hover-shine"></div>
+                        <div class="wcu-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>End-to-End Student Support</h3>
+                        <p>Complete support from counselling and university applications to visas, accommodation, and post-arrival assistance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="wcu-premium-card wcu-blue wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="wcu-hover-shine"></div>
+                        <div class="wcu-icon">
+                            <i class="fa-brands fa-canadian-maple-leaf"></i>
+                        </div>
+                        <h3>Specialists in Canadian Education</h3>
+                        <p>Extensive knowledge of Canada's education system, universities, colleges, career opportunities, and immigration pathways.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECTION 3 — OUR MISSION & VISION             -->
+    <!-- ============================================ -->
+    <section class="mv-section parallaxie" style="background: linear-gradient(135deg, rgba(255,255,255,0.92) 0%, rgba(248,249,252,0.88) 100%), url('images/hero_student_canada_banner.jpg') center/cover no-repeat; position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="mv-card wow fadeInUp" data-wow-delay="0.1s">
+                        <img src="images/dest_bg_uk.png" alt="UK" class="mv-bg-img">
+                        <div class="mv-overlay"></div>
+                        <div class="mv-content">
+                            <div class="mv-icon mission-icon">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <div class="mv-accent-bar mission-bar"></div>
+                            <h3>Our Mission</h3>
+                            <p>To empower students with trusted guidance, transparent counselling, and comprehensive international education solutions that transform dreams into successful global careers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mv-card wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="images/dest_bg_canada.png" alt="Canada" class="mv-bg-img">
+                        <div class="mv-overlay"></div>
+                        <div class="mv-content">
+                            <div class="mv-icon vision-icon">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="mv-accent-bar vision-bar"></div>
+                            <h3>Our Vision</h3>
+                            <p>To become one of the most trusted international education partners by helping students access world-class education and meaningful opportunities in Canada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 4 — OUR COUNSELLING PROCESS (Keep)   -->
+    <!-- ============================================ -->
+    <div class="our-consultancy">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="our-consultancy-images consultancy-single-img">
+                        <figure class="image-anime reveal consultancy-main-figure">
+                            <img src="images/our-counselling-process-1.png" alt="Our Counselling Process" class="consultancy-single-photo" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="our-consultancy-content">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Our Counselling Process</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">A Personalized Plan for Your Global Success</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Every student has unique goals. Our specialist advisors evaluate each student's academic profile, career ambitions, and financial preferences to structure a highly personalized pathway.</p>
+                        </div>
+                        <div class="our-consultancy-box tab-content" id="myTabContent">
+                            <div class="our-consultancy-nav wow fadeInUp" data-wow-delay="0.4s">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="apply-tab" data-bs-toggle="tab" data-bs-target="#apply" type="button" role="tab" aria-selected="true">Understand Goals & Assess</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="important-tab" data-bs-toggle="tab" data-bs-target="#important" type="button" role="tab" aria-selected="false">Plan & Recommend</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="immigration-tab" data-bs-toggle="tab" data-bs-target="#immigration" type="button" role="tab" aria-selected="false">Support Journey</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="consultancy-tab-item tab-pane fade show active" id="apply" role="tabpanel">
+                                <div class="row align-items-center">
+                                    <div class="col-md-12">
+                                        <div class="consultancy-tab-content">
+                                            <ul>
+                                                <li>We listen to your goals, strengths, and aspirations.</li>
+                                                <li>We evaluate your profile and explore the best options</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="consultancy-tab-item tab-pane fade" id="important" role="tabpanel">
+                                <div class="row align-items-center">
+                                    <div class="col-md-12">
+                                        <div class="consultancy-tab-content">
+                                            <div class="consultancy-tab-content-list">
+                                                <ul>
+                                                    <li>We design a personalized study plan tailored for you</li>
+                                                    <li>We suggest the right countries, universities, and courses.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="consultancy-tab-item tab-pane fade" id="immigration" role="tabpanel">
+                                <div class="row align-items-center">
+                                    <div class="col-md-12">
+                                        <div class="consultancy-tab-content">
+                                            <div class="consultancy-tab-content-list">
+                                                <ul>
+                                                    <li>We support you in every step until you achieve your dream.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="our-consultancy-btn wow fadeInUp">
+                            <a href="contact.html" class="premium-cta-btn">start your application</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECTION 5 — OUR STUDENT JOURNEY (Timeline)    -->
+    <!-- ============================================ -->
+    <section class="journey-section">
+        <div class="journey-map-watermark"></div>
+        <div class="container">
+            <div class="section-title text-center wow fadeInUp">
+                <div class="section-title wow fadeInRight">
+                    <h3>YOUR JOURNEY WITH US</h3>
+                    <h2 class="text-anime-style-3" data-cursor="-opaque">From First Hello to <span style="color:var(--accent-color);">First Year Abroad</span></h2>
+                </div>
+                
+                <p class="wow fadeInUp" data-wow-delay="0.2s">Every step of the way, we're here to guide, support, and celebrate your progress.</p>
+            </div>
+            
+            <div class="journey-timeline-container">
+                <div class="journey-timeline-line"></div>
+                
+                <div class="journey-timeline-steps">
+                    <!-- Step 1 -->
+                    <div class="journey-step-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="journey-step-circle circle-red">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div class="journey-step-name">Free Consultation</div>
+                    </div>
+                    
+                    <div class="journey-step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    
+                    <!-- Step 2 -->
+                    <div class="journey-step-item wow fadeInUp" data-wow-delay="0.15s">
+                        <div class="journey-step-circle circle-blue">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <div class="journey-step-name">Profile Evaluation</div>
+                    </div>
+                    
+                    <div class="journey-step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                    <!-- Step 3 -->
+                    <div class="journey-step-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="journey-step-circle circle-red">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <div class="journey-step-name">University Selection</div>
+                    </div>
+
+                    <div class="journey-step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                    <!-- Step 4 -->
+                    <div class="journey-step-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="journey-step-circle circle-blue">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </div>
+                        <div class="journey-step-name">Application<br>Processing</div>
+                    </div>
+
+                    <div class="journey-step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                    <!-- Step 5 -->
+                    <div class="journey-step-item wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="journey-step-circle circle-red">
+                            <i class="fa-solid fa-passport"></i>
+                        </div>
+                        <div class="journey-step-name">Visa Assistance</div>
+                    </div>
+
+                    <div class="journey-step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                    <!-- Step 6 -->
+                    <div class="journey-step-item wow fadeInUp" data-wow-delay="0.35s">
+                        <div class="journey-step-circle circle-blue">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <div class="journey-step-name">Departure Guidance</div>
+                    </div>
+
+                    <div class="journey-step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                    <!-- Step 7 -->
+                    <div class="journey-step-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="journey-step-circle circle-red">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="journey-step-name">Arrival &amp; First-Year<br>Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- SECTION 7 — FOUNDER MESSAGE                -->
+    <!-- ============================================ -->
+    <section class="founder-message-section">
+        <div class="container">
+            <div class="row align-items-stretch g-5">
+                <!-- Left: Photo, Info, Quote Box -->
+                <div class="col-lg-4 col-md-12">
+                    <!-- Photo -->
+                    <div class="founder-img-box wow fadeInLeft" data-wow-delay="0.1s">
+                        <img src="images/founder.jpg" alt="Varatharaj - Founder & Director, CANSYZ">
+                    </div>
+                    <!-- Info -->
+                    <div class="founder-info wow fadeInLeft" data-wow-delay="0.15s">
+                        <h3>Varatharaj</h3>
+                        <div class="designation">Founder & Director</div>
+                        <div class="company">CANSYZ INTERNATIONAL PRIVATE LIMITED</div>
+                    </div>
+                    <!-- Quote Box (Attached Design style) -->
+                    <div class="founder-attached-quote wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="quote-circle-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="quote-attached-text">
+                            "Our success isn't measured by how many students leave India - it's measured by how many thrive abroad."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right: Message Content -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="founder-right-content wow fadeInRight" data-wow-delay="0.25s">
+                        <h2>A MESSAGE <span style="color:var(--accent-color);">FROM OUR FOUNDER</span></h2>
+                        <div class="wc-red-underline" style="width:50px; margin-bottom:25px;"></div>
+                        
+                        <p>Dear Students, Parents, and Partners,</p>
+                        <p><strong>Welcome to CANSYZ.</strong></p>
+                        <p>Thank you for taking the time to learn about our company and the vision that drives everything we do.</p>
+                        
+                        <p><strong>CANSYZ was founded with a simple belief:</strong></p>
+                        <p>International education is not just about studying abroad it is about creating opportunities that transform lives.</p>
+                        <p>Every student has unique dreams, ambitions, and challenges. Choosing to study in another country is one of the most important decisions a student and family will ever make.</p>
+                        <p>That is why we established CANSYZ not simply to help students secure admissions or visas, but to become a trusted partner throughout their entire journey.</p>
+                        
+                        <p><strong>Our commitment is built on three principles:</strong><br>
+                        <span class="founder-principles">Integrity, Transparency, Student Success.</span></p>
+                        
+                        <ul class="founder-bullet-list">
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>We believe honest guidance builds lasting trust.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>We believe every student deserves personalized advice based on their goals — not sales targets.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Most importantly, we believe our responsibility continues long after a student boards a flight.</span>
+                            </li>
+                        </ul>
+                        
+                        <p>Through our <strong>CANSYZ 360° Student Success Program</strong>, we remain committed to supporting every student from their very first counselling session through the successful completion of their first year abroad.</p>
+                        
+                        <p>At CANSYZ, we do not measure our success by the number of admissions we secure. We measure it by the number of students who confidently build successful futures because of the guidance, care, and support they receive from us.</p>
+                        
+                        <p>To every student and parent who chooses CANSYZ. Thank you for placing your trust in us.</p>
+                        <p>We look forward to walking beside you as you take your first step toward a brighter global future.</p>
+                        
+                        <p style="margin-bottom:0;">Warm Regards,</p>
+                        <span class="founder-signature">Varatharaj</span><br>
+                        <strong>Founder & Director</strong><br>
+                        <span>CANSYZ INTERNATIONAL PRIVATE LIMITED</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer footer-redesign">
+        <div class="container">
+            <div class="row footer-main-row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-brand">
+                        <div class="footer-logo-new">
+                            <img src="images/cansys-international-logo.png" alt="CANSYZ Logo" class="footer-logo-img" loading="lazy">
+                        </div>
+                        <p class="footer-tagline">Creating global opportunities. Empowering students to build successful global futures through honest guidance and personalized career planning.</p>
+                        <div class="footer-social-new">
+                            <a href="#" class="footer-soc-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="footer-soc-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="footer-soc-icon"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="footer-soc-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-links-new">
+                        <h4 class="footer-col-title">Our Services</h4>
+                        <div class="footer-col-underline"></div>
+                        <ul>
+                            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> University Admission</a></li>
+                            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Documentation Support</a></li>
+                            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Visa Assistance</a></li>
+                            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Pre-Departure Orientation</a></li>
+                            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Post-Arrival Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-links-new">
+                        <h4 class="footer-col-title">Quick Links</h4>
+                        <div class="footer-col-underline"></div>
+                        <ul>
+                            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About CANSYZ</a></li>
+                            <li><a href="process.html"><i class="fa-solid fa-chevron-right"></i> Our Process</a></li>
+                            <li><a href="countries.html"><i class="fa-solid fa-chevron-right"></i> Study Destinations</a></li>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Resources</a></li>
+                            <li><a href="founder.html"><i class="fa-solid fa-chevron-right"></i> Founder Message</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-links-new">
+                        <h4 class="footer-col-title">Contact Info</h4>
+                        <div class="footer-col-underline"></div>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fa-solid fa-location-dot footer-contact-icon"></i>
+                                <span>No.9, First floor, No.158,Rayala Towers, Tower-ll, Mount road, Chennai-600002.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone footer-contact-icon"></i>
+                                <span>+91 74488 65000, +91 98407 65000</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-envelope footer-contact-icon"></i>
+                                <span>info@cansyz.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-clock footer-contact-icon"></i>
+                                <span>Mon - Sat: 10:00 AM - 7:00 PM<br>Sunday: By Appointment</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12">
+                        <p class="footer-copyright-new">&copy; 2026 CANSYZ. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="footer-bottom-nav">
+                            <a href="about.html">About Us</a>
+                            <span class="fbn-sep">|</span>
+                            <a href="services.html">Services</a>
+                            <span class="fbn-sep">|</span>
+                            <a href="countries.html">Destinations</a>
+                            <span class="fbn-sep">|</span>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/function.js"></script>
+</body>
+
+</html>
