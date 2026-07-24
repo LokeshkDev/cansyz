@@ -360,10 +360,7 @@
 						<select id="consultDestination" name="destination" class="consult-form-control" required>
 							<option value="" disabled selected>Select study destination</option>
 							<option value="Canada">Canada</option>
-							<option value="United Kingdom">United Kingdom</option>
-							<option value="USA">USA</option>
-							<option value="Australia">Australia</option>
-							<option value="Other">Other</option>
+							<option value="UK">UK</option>
 						</select>
 						<div class="consult-error-msg" id="consultDestinationError">Please select a destination.</div>
 					</div>
@@ -371,11 +368,8 @@
 						<label for="consultStudyLevel">Preferred study level*</label>
 						<select id="consultStudyLevel" name="study_level" class="consult-form-control" required>
 							<option value="" disabled selected>Select study level</option>
-							<option value="Undergraduate">Undergraduate / Bachelor's</option>
-							<option value="Postgraduate">Postgraduate / Master's</option>
-							<option value="Diploma">Diploma / Advanced Diploma</option>
-							<option value="Doctorate">Doctorate / PhD</option>
-							<option value="Other">Other</option>
+							<option value="UG">UG (Undergraduate)</option>
+							<option value="PG">PG (Postgraduate)</option>
 						</select>
 						<div class="consult-error-msg" id="consultStudyLevelError">Please select a study level.</div>
 					</div>
@@ -383,10 +377,10 @@
 						<label for="consultStartDate">When would you like to start studying?*</label>
 						<select id="consultStartDate" name="start_date" class="consult-form-control" required>
 							<option value="" disabled selected>Select start date</option>
-							<option value="Sep 2026">Sep 2026</option>
-							<option value="Jan 2027">Jan 2027</option>
-							<option value="May 2027">May 2027</option>
-							<option value="Later">Later</option>
+							<option value="Immediate">Immediate</option>
+							<option value="One month">One month</option>
+							<option value="3 months">3 months</option>
+							<option value="6 months">6 months</option>
 						</select>
 						<div class="consult-error-msg" id="consultStartDateError">Please select a start date.</div>
 					</div>
