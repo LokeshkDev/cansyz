@@ -478,13 +478,7 @@
 		}
 	});
 
-	// Show popup on first load of the session (2 seconds delay for premium experience)
-	if (!sessionStorage.getItem('consultPopupShown')) {
-		setTimeout(function() {
-			openConsultationModal();
-			sessionStorage.setItem('consultPopupShown', 'true');
-		}, 2000);
-	}
+	
 
 	// Form validation and submit
 	$form.on('submit', function(e) {
