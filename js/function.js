@@ -320,4 +320,306 @@
 	}
 	/* Our Services Active End */
 	
+	/* Dynamic Free Consultation Modal Insertion & Handling */
+	var modalHTML = `
+	<div id="consultModal" class="consult-modal-overlay">
+		<div class="consult-modal-container">
+			<button id="consultModalClose" class="consult-modal-close">&times;</button>
+			<div id="consultModalFormView">
+				<div class="consult-modal-header">
+					<h3>Book a Free Consultation</h3>
+					<p>Register to receive honest guidance and start your study abroad journey.</p>
+				</div>
+				<form id="consultForm" novalidate>
+					<div class="consult-form-group">
+						<label for="consultName">Full Name*</label>
+						<input type="text" id="consultName" name="name" class="consult-form-control" placeholder="Enter your full name" required>
+						<div class="consult-error-msg" id="consultNameError">Please enter your name.</div>
+					</div>
+					<div class="consult-form-group">
+						<label for="consultEmail">Email Address*</label>
+						<input type="email" id="consultEmail" name="email" class="consult-form-control" placeholder="Enter your email address" required>
+						<div class="consult-error-msg" id="consultEmailError">Please enter a valid email address.</div>
+					</div>
+					<div class="consult-form-group">
+						<label for="consultPhone">Mobile Number*</label>
+						<div class="consult-phone-row">
+							<select id="consultDialCode" name="dial_code" class="consult-form-control consult-dial-code">
+								<option value="+91" selected>IN +91</option>
+								<option value="+1">CA +1</option>
+								<option value="+44">GB +44</option>
+								<option value="+1">US +1</option>
+								<option value="+61">AU +61</option>
+							</select>
+							<input type="tel" id="consultPhone" name="phone" class="consult-form-control" placeholder="Enter mobile number" required>
+						</div>
+						<div class="consult-error-msg" id="consultPhoneError">Please enter a valid mobile number.</div>
+					</div>
+					<div class="consult-form-group">
+						<label for="consultDestination">Your preferred study destination*</label>
+						<select id="consultDestination" name="destination" class="consult-form-control" required>
+							<option value="" disabled selected>Select study destination</option>
+							<option value="Canada">Canada</option>
+							<option value="United Kingdom">United Kingdom</option>
+							<option value="USA">USA</option>
+							<option value="Australia">Australia</option>
+							<option value="Other">Other</option>
+						</select>
+						<div class="consult-error-msg" id="consultDestinationError">Please select a destination.</div>
+					</div>
+					<div class="consult-form-group">
+						<label for="consultStudyLevel">Preferred study level*</label>
+						<select id="consultStudyLevel" name="study_level" class="consult-form-control" required>
+							<option value="" disabled selected>Select study level</option>
+							<option value="Undergraduate">Undergraduate / Bachelor's</option>
+							<option value="Postgraduate">Postgraduate / Master's</option>
+							<option value="Diploma">Diploma / Advanced Diploma</option>
+							<option value="Doctorate">Doctorate / PhD</option>
+							<option value="Other">Other</option>
+						</select>
+						<div class="consult-error-msg" id="consultStudyLevelError">Please select a study level.</div>
+					</div>
+					<div class="consult-form-group">
+						<label for="consultStartDate">When would you like to start studying?*</label>
+						<select id="consultStartDate" name="start_date" class="consult-form-control" required>
+							<option value="" disabled selected>Select start date</option>
+							<option value="Sep 2026">Sep 2026</option>
+							<option value="Jan 2027">Jan 2027</option>
+							<option value="May 2027">May 2027</option>
+							<option value="Later">Later</option>
+						</select>
+						<div class="consult-error-msg" id="consultStartDateError">Please select a start date.</div>
+					</div>
+					
+					<div class="consult-checkbox-group">
+						<input type="checkbox" id="consultAgreeTerms" name="agree_terms" required>
+						<label for="consultAgreeTerms" class="consult-checkbox-label">
+							I agree to CANSYZ <a href="terms.html" target="_blank">Terms</a> and <a href="privacy.html" target="_blank">privacy policy</a>.*
+						</label>
+					</div>
+					<div class="consult-error-msg" id="consultAgreeError" style="margin-top: -8px; margin-bottom: 12px;">You must agree to the terms and privacy policy.</div>
+
+					<div class="consult-checkbox-group">
+						<input type="checkbox" id="consultAllowContact" name="allow_contact" checked>
+						<label for="consultAllowContact" class="consult-checkbox-label">
+							Please contact me by phone, email or SMS to assist with my enquiry
+						</label>
+					</div>
+					<div class="consult-checkbox-group">
+						<input type="checkbox" id="consultSubscribeNews" name="subscribe_news">
+						<label for="consultSubscribeNews" class="consult-checkbox-label">
+							I would like to receive updates and offers from CANSYZ
+						</label>
+					</div>
+
+					<button type="submit" class="consult-btn-submit">Avail FREE Counselling</button>
+				</form>
+			</div>
+			<div id="consultModalSuccessView" class="consult-success-view">
+				<div class="consult-success-icon">
+					<i class="fa-solid fa-check"></i>
+				</div>
+				<h3>Request Submitted!</h3>
+				<p>Thank you for booking a free consultation. Our expert advisors will reach out to you shortly to map your study abroad journey.</p>
+				<button id="consultSuccessOkBtn" class="consult-btn-ok">OK</button>
+			</div>
+		</div>
+	</div>
+	`;
+
+	$('body').append(modalHTML);
+
+	var $modal = $('#consultModal');
+	var $form = $('#consultForm');
+	var $formView = $('#consultModalFormView');
+	var $successView = $('#consultModalSuccessView');
+
+	function openConsultationModal() {
+		$formView.show();
+		$successView.hide();
+		$form[0].reset();
+		$('.consult-form-control').removeClass('is-invalid');
+		$('.consult-error-msg').hide();
+		$modal.addClass('active');
+		$('body').css('overflow', 'hidden');
+	}
+
+	function closeConsultationModal() {
+		$modal.removeClass('active');
+		$('body').css('overflow', '');
+	}
+
+	// Click to open modal
+	$(document).on('click', 'a, button', function(e) {
+		var text = $(this).text().trim().toLowerCase();
+		var href = $(this).attr('href');
+		
+		var isConsultationBtn = false;
+		if (text.indexOf('free consultation') !== -1) {
+			isConsultationBtn = true;
+		} else if (text.indexOf('free counselling') !== -1) {
+			isConsultationBtn = true;
+		} else if (text.indexOf('book your free consultant') !== -1) {
+			isConsultationBtn = true;
+		} else if (href && (href.indexOf('book-consultation') !== -1 || href.indexOf('services.html') !== -1 && text.indexOf('consultation') !== -1)) {
+			isConsultationBtn = true;
+		}
+
+		if (isConsultationBtn) {
+			e.preventDefault();
+			openConsultationModal();
+		}
+	});
+
+	// Close buttons
+	$('#consultModalClose, #consultSuccessOkBtn').on('click', function(e) {
+		e.preventDefault();
+		closeConsultationModal();
+	});
+
+	// Close on click outside modal container
+	$modal.on('click', function(e) {
+		if ($(e.target).is($modal)) {
+			closeConsultationModal();
+		}
+	});
+
+	// Show popup on first load of the session (2 seconds delay for premium experience)
+	if (!sessionStorage.getItem('consultPopupShown')) {
+		setTimeout(function() {
+			openConsultationModal();
+			sessionStorage.setItem('consultPopupShown', 'true');
+		}, 2000);
+	}
+
+	// Form validation and submit
+	$form.on('submit', function(e) {
+		e.preventDefault();
+		var isValid = true;
+
+		// Validate Name
+		var name = $('#consultName').val().trim();
+		if (name === '') {
+			$('#consultName').addClass('is-invalid');
+			$('#consultNameError').show();
+			isValid = false;
+		} else {
+			$('#consultName').removeClass('is-invalid');
+			$('#consultNameError').hide();
+		}
+
+		// Validate Email
+		var email = $('#consultEmail').val().trim();
+		var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if (email === '' || !emailRegex.test(email)) {
+			$('#consultEmail').addClass('is-invalid');
+			$('#consultEmailError').show();
+			isValid = false;
+		} else {
+			$('#consultEmail').removeClass('is-invalid');
+			$('#consultEmailError').hide();
+		}
+
+		// Validate Phone
+		var phone = $('#consultPhone').val().trim();
+		if (phone === '' || phone.replace(/\D/g, '').length < 7) {
+			$('#consultPhone').addClass('is-invalid');
+			$('#consultPhoneError').show();
+			isValid = false;
+		} else {
+			$('#consultPhone').removeClass('is-invalid');
+			$('#consultPhoneError').hide();
+		}
+
+		// Validate Destination
+		var dest = $('#consultDestination').val();
+		if (!dest) {
+			$('#consultDestination').addClass('is-invalid');
+			$('#consultDestinationError').show();
+			isValid = false;
+		} else {
+			$('#consultDestination').removeClass('is-invalid');
+			$('#consultDestinationError').hide();
+		}
+
+		// Validate Study Level
+		var level = $('#consultStudyLevel').val();
+		if (!level) {
+			$('#consultStudyLevel').addClass('is-invalid');
+			$('#consultStudyLevelError').show();
+			isValid = false;
+		} else {
+			$('#consultStudyLevel').removeClass('is-invalid');
+			$('#consultStudyLevelError').hide();
+		}
+
+		// Validate Start Date
+		var startDate = $('#consultStartDate').val();
+		if (!startDate) {
+			$('#consultStartDate').addClass('is-invalid');
+			$('#consultStartDateError').show();
+			isValid = false;
+		} else {
+			$('#consultStartDate').removeClass('is-invalid');
+			$('#consultStartDateError').hide();
+		}
+
+		// Validate Agree Terms Checkbox
+		var agree = $('#consultAgreeTerms').is(':checked');
+		if (!agree) {
+			$('#consultAgreeError').show();
+			isValid = false;
+		} else {
+			$('#consultAgreeError').hide();
+		}
+
+		if (isValid) {
+			$formView.fadeOut(200, function() {
+				$successView.fadeIn(200);
+			});
+		}
+	});
+
+	// Dynamic validation feedback on input change
+	$('.consult-form-control').on('input change', function() {
+		if ($(this).val()) {
+			$(this).removeClass('is-invalid');
+			$(this).parent().siblings('.consult-error-msg').hide();
+			$(this).siblings('.consult-error-msg').hide();
+		}
+	});
+	$('#consultAgreeTerms').on('change', function() {
+		if ($(this).is(':checked')) {
+			$('#consultAgreeError').hide();
+		}
+	});
+
+	/* Floating Action Buttons (Scroll to Top & WhatsApp) */
+	var floatingButtonsHTML = `
+	<div class="floating-actions-container">
+		<a href="https://wa.me/917448865000" target="_blank" class="float-btn float-btn-whatsapp" title="Chat on WhatsApp">
+			<img src="images/WhatsApp_icon.png" alt="WhatsApp">
+		</a>
+		<button id="scrollTopBtn" class="float-btn float-btn-scroll-top" title="Scroll to Top">
+			<i class="fa-solid fa-chevron-up"></i>
+		</button>
+	</div>
+	`;
+	$('body').append(floatingButtonsHTML);
+
+	var $scrollTopBtn = $('#scrollTopBtn');
+
+	$(window).on('scroll', function() {
+		if ($(window).scrollTop() > 300) {
+			$scrollTopBtn.addClass('show');
+		} else {
+			$scrollTopBtn.removeClass('show');
+		}
+	});
+
+	$scrollTopBtn.on('click', function(e) {
+		e.preventDefault();
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	});
+
 })(jQuery);
